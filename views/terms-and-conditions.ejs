@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="<%- lang %>">
+  <head>
+    <%- include('includes/bird.ejs') %>
+    
+    <title><%= tac_page_title %></title>
+    <meta name="description" content="<%- tac_meta_desc %>">
+    <link rel="canonical" href="https://echoesapp.ca/<%- lang %>/terms-and-conditions">
+
+    <meta property="og:title" content="<%= tac_page_title %>">
+    <meta property="og:description" content="<%- tac_meta_desc %>">
+    <meta property="og:url" content="https://echoesapp.ca/<%- lang %>/terms-and-conditions">
+
+    <link rel="canonical" href="https://echoesapp.ca/<%- lang %>/terms-and-conditions">
+
+    <%- include('includes/head.ejs') %>
+  </head>
+  
+  <body>
+    <%- include('includes/header.ejs') %>
+
+    <section id="terms-and-conditions" class="wrap-m first">
+      <h2 class="section-title"><%- tac_title %></h2>
+
+      <%- tac_body %>
+    </section>
+
+    <%- include('includes/footer.ejs') %>
+  </body>
+
+  <%- include('includes/after-body-script.ejs') %>
+</html>

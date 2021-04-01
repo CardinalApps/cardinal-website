@@ -1,0 +1,32 @@
+<header id="site-header">
+  <div class="wrap-xl">
+    <div class="left">
+      <div id="logo" title="<%= home_title %>">
+        <a href="/<%- lang %>">
+          <img src="/logotype-light.svg" alt="<%- logo_alt %>" title="<%- logo_title %>">
+        </a>
+      </div>
+    </div>
+
+    <div class="right">
+      <nav>
+        <a href="https://github.com/somebeaver" target="_blank" rel="nofollow"><%= nav_github %></a>
+      </nav>
+
+      <div class="lang-switcher">
+        <span class="current-lang">
+          <%- current_lang_prefix %><%- lang %>
+        </span>
+
+        <div class="all-langs">
+          <a href="/en">English</a>
+          <!-- <a href="/fr">Français</a> -->
+        </div>
+      </div>
+
+      <div class="theme-switcher" title="<%= nav_theme_switcher_title %>">
+        <div class="svg--" data-src="/icons/sun.svg"></div>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,78 @@
+<script>
+  // fetches svg's over ajax and embeds them directly into the document
+  function embedSvgs() {
+    let svgs = Array.from(document.querySelectorAll('.svg--'))
+
+    if (svgs.length) {
+      for (let svgDiv of svgs) {
+        let src = svgDiv.getAttribute('data-src')
+
+        let xhr = new XMLHttpRequest()
+        xhr.open('GET', src)
+        xhr.send()
+
+        xhr.onload = () => {
+          let response = xhr.response
+          svgDiv.insertAdjacentHTML('afterend', response)
+          svgDiv.remove()
+        }
+      }
+    }
+  }
+  embedSvgs()
+
+  function setThemedLogo() {
+    if (document.body.classList.contains('dark')) {
+      document.querySelector('#logo img').setAttribute('src', '/logotype-light.svg')
+    } else if (document.body.classList.contains('light')) {
+      document.querySelector('#logo img').setAttribute('src', '/logotype-dark.svg')
+    }
+  }
+
+  // click to switch color modes
+  document.querySelector('.theme-switcher').addEventListener('click', (event) => {
+    if (document.body.classList.contains('dark')) {
+      document.cookie = 'colortheme=light;path=/'
+      document.body.classList.remove('dark')
+      document.body.classList.add('light')
+    } else {
+      document.cookie = 'colortheme=dark;path=/'
+      document.body.classList.remove('light')
+      document.body.classList.add('dark')
+    }
+    setThemedLogo()
+  })
+
+  // click to show/hide all langs
+  let langSwitcher = document.querySelector('.lang-switcher')
+  langSwitcher.addEventListener('click', (event) => {
+    if (langSwitcher.classList.contains('open')) {
+      langSwitcher.classList.remove('open')
+    } else {
+      langSwitcher.classList.add('open')
+    }
+  })
+
+  // maybe set the color theme from the cookie
+  let cookieValue = document.cookie.split('; ').find(row => row.startsWith('colortheme'))
+
+  if (cookieValue) {
+    let theme = cookieValue.split('=')[1]
+    document.body.classList.add(theme)
+  } else {
+    // default to dark mode
+    document.body.classList.add('dark')
+  }
+
+  setThemedLogo()
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177631985-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177631985-1');
+</script>
