@@ -481,6 +481,7 @@ svg path {
 
 .feature {
   width: calc(50% - 10px);
+  margin-bottom: 20px;
   padding: 40px;
   border-radius: 30px;
   background-color: var(--bg-2);
@@ -558,6 +559,10 @@ footer .attributions a:hover {
 
 @media screen and (max-width: 768px) {
 
+  #logo img {
+    height: 28px;
+  }
+
   .first {
     padding-top: 110px;
   }
@@ -579,6 +584,10 @@ footer .attributions a:hover {
     padding: 0;
   }
 
+  header.site-header .wrap-xl {
+    padding: 0 12px;
+  }
+
   #landing {
     margin-bottom: 70px;
   }
@@ -587,8 +596,8 @@ footer .attributions a:hover {
     max-width: none;
   }
 
-  .downloads {
-    flex-wrap: wrap;
+  #downloads .item {
+    width: 100%;
   }
 
   .btn {
@@ -608,6 +617,14 @@ footer .attributions a:hover {
     margin-bottom: 5px;
   }
 
+  .theme-switcher {
+    padding-left: 10px;
+  }
+
+  .lang-switcher {
+    padding-left: 10px;
+  }
+
   .lang-switcher .all-langs {
     width: 100%;
     padding: 15px;
@@ -620,8 +637,16 @@ footer .attributions a:hover {
     background-color: var(--bg);
   }
 
-  .subtitle-notices {
+  .subtitle-notices, .notices {
     padding-left: 0;
+  }
+
+  .feature-list {
+    flex-wrap: wrap;
+  }
+
+  .feature {
+    width: 100%;
   }
 
 }
