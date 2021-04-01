@@ -196,7 +196,7 @@ header#site-header {
 
 header#site-header .wrap-xl {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
@@ -260,6 +260,7 @@ nav a:first-of-type { margin-left: 0; }
 .current-lang {
   color: var(--text-color);
   cursor: pointer;
+  white-space: no-wrap;
 }
 
 .all-langs {
@@ -333,14 +334,16 @@ svg path {
 
 #downloads .items {
   display: flex;
+  flex-wrap: wrap;
 }
 
 #downloads .item {
-  width: 33.3333%;
+  width: 350px;
   padding: 40px 20px 20px;
   margin-bottom: 40px;
   margin-right: 40px;
   border-radius: 30px;
+  flex-shrink: 0;
   background-color: var(--bg-3);
 }
 
@@ -467,17 +470,6 @@ svg path {
   color: var(--text-color-3);
 }
 
-.section-title {
-  width: 100%;
-  margin-bottom: 60px;
-  position: sticky;
-  top: 11px;
-  font: 600 36px var(--base-font);
-  color: var(--text-color);
-  text-align: center;
-  z-index: 200;
-}
-
 #features {
   
 }
@@ -551,6 +543,19 @@ footer .attributions a:hover {
   margin-bottom: 100px;
 }
 
+@media screen and (max-width: 900px) {
+
+  #downloads .items {
+    justify-content: center;
+  }
+
+  #downloads .item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
 
   .first {
@@ -567,11 +572,11 @@ footer .attributions a:hover {
 
   h3 {
     font-size: 24px;
+    padding-left: 0;
   }
 
-  .section-title {
-    position: static;
-    z-index: 1;
+  header#site-header {
+    padding: 0;
   }
 
   #landing {
@@ -613,6 +618,10 @@ footer .attributions a:hover {
     right: 0;
     transition: none;
     background-color: var(--bg);
+  }
+
+  .subtitle-notices {
+    padding-left: 0;
   }
 
 }
