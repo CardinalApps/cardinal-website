@@ -1,4 +1,7 @@
 module.exports = {
+  "download_url_server_latest": "https://github.com/somebeaver/Cardinal-Server/releases/latest",
+  "download_url_music_latest": "https://github.com/somebeaver/Cardinal-Music/releases/latest",
+
   // home meta
   "home_title": "Cardinal Media Server - Free media server for your music, movies, TV, photos, and documents.",
   "home_meta_desc": "Cardinal Media Server is ad-free, privacy focused freeware that runs on macOS and Windows and makes your personal media available to your various devices.",

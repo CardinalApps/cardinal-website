@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g transform="matrix(1.05302,0,0,1.05302,-13.1921,-20.1387)">
+    <g transform="matrix(0.966352,0,0,0.986268,8.96356,-2.71354)">
         <g id="bg">
-            <path d="M498.749,140.68C498.749,73.592 444.282,19.125 377.193,19.125L134.083,19.125C66.995,19.125 12.528,73.592 12.528,140.68L12.528,383.79C12.528,450.878 66.995,505.345 134.083,505.345L377.193,505.345C444.282,505.345 498.749,450.878 498.749,383.79L498.749,140.68Z" style="fill:white;"/>
+            <path d="M498.749,138.225C498.749,72.492 444.282,19.125 377.193,19.125L134.083,19.125C66.995,19.125 12.528,72.492 12.528,138.225L12.528,386.245C12.528,451.978 66.995,505.345 134.083,505.345L377.193,505.345C444.282,505.345 498.749,451.978 498.749,386.245L498.749,138.225Z" style="fill:white;"/>
         </g>
     </g>
-    <g id="clouds" transform="matrix(1,0,0,1,9.21692,5.3537)">
+    <g id="clouds" transform="matrix(0.794453,0,0,0.810826,59.8193,51.7316)">
         <g transform="matrix(0.599468,0,0,0.599468,172.363,142.871)">
             <g id="clouds1" serif:id="clouds">
                 <g transform="matrix(1,0,0,1,-255.999,-255.999)">
@@ -20,8 +20,8 @@
             </g>
         </g>
     </g>
-    <g id="bird" transform="matrix(-1.11349,0,0,1.11349,520.76,2.02152)">
-        <g transform="matrix(-0.866505,0,0,0.866505,238.673,227.194)">
+    <g id="bird" transform="matrix(-0.884615,0,0,0.902847,466.216,71.5245)">
+        <g transform="matrix(-0.866505,0,0,0.866505,238.673,218.856)">
             <g id="bird1" serif:id="bird">
                 <g transform="matrix(1,0,0,1,-256,-256)">
                     <clipPath id="_clip1">
