@@ -49,6 +49,7 @@
               </ul>
             </div>
             <div class="platforms">
+              <div class="all"><a href="/en/cardinal-server"><%- downloads_server_all %></a></div>
               <%- include('includes/buttons/server-macos.ejs') %>
               <%- include('includes/buttons/server-windows.ejs') %>
             </div>
@@ -67,13 +68,14 @@
               </ul>
             </div>
             <div class="platforms">
+              <div class="all"><a href="/en/cardinal-music"><%- downloads_music_all %></a></div>
               <%- include('includes/buttons/music-macos.ejs') %>
               <%- include('includes/buttons/music-windows.ejs') %>
             </div>
           </div>
 
           <!-- photos -->
-          <div class="item">
+          <div class="item in-development">
             <div class="icon">
               <img src="/icons/logo-music.svg" alt="<%- photos_icon_alt %>" title="<%- photos_icon_title %>">
             </div>
@@ -85,12 +87,12 @@
               </ul>
             </div>
             <div class="platforms">
-              <p class="in-development"><%- in_development %></p>
+              <p><%- in_development %></p>
             </div>
           </div>
 
           <!-- movies & tv -->
-          <div class="item">
+          <div class="item in-development">
             <div class="icon">
               <img src="/icons/logo-music.svg" alt="<%- cinema_icon_alt %>" title="<%- cinema_icon_title %>">
             </div>
@@ -102,12 +104,12 @@
               </ul>
             </div>
             <div class="platforms">
-              <p class="in-development"><%- development_planned %></p>
+              <p><%- development_planned %></p>
             </div>
           </div>
 
           <!-- books -->
-          <div class="item">
+          <div class="item in-development">
             <div class="icon">
               <img src="/icons/logo-music.svg" alt="<%- books_icon_alt %>" title="<%- books_icon_title %>">
             </div>
@@ -119,7 +121,7 @@
               </ul>
             </div>
             <div class="platforms">
-              <p class="in-development"><%- development_planned %></p>
+              <p><%- development_planned %></p>
             </div>
           </div>
 
@@ -130,21 +132,41 @@
     <section id="core-values" class="wrap-m home-section">
       <h3><%- all_apps_features_title %></h3>
       <div class="core-value-list">
+
         <div class="core-value">
-          <h5 class="name"><%- all_apps_features_privacy_title %></h5>
+          <h5 class="name">
+            <span><%- all_apps_features_privacy_title %></span>
+            <i class="fas fa-user-lock"></i>
+          </h5>
           <div class="info"><%- all_apps_features_privacy_desc %></div>
         </div>
+
         <div class="core-value">
-          <h5 class="name"><%- all_apps_features_adfree_title %></h5>
+          <h5 class="name">
+            <span><%- all_apps_features_adfree_title %></span>
+            <i class="fas fa-cloud-sun"></i>
+          </h5>
           <div class="info"><%- all_apps_features_adfree_desc %></div>
         </div>
+
         <div class="core-value">
-          <h5 class="name"><%- all_apps_features_noforce_title %></h5>
+          <h5 class="name">
+            <span><%- all_apps_features_noforce_title %></span>
+            <i class="fas fa-ghost"></i>
+          </h5>
           <div class="info"><%- all_apps_features_noforce_desc %></div>
         </div>
+
+        <div class="core-value">
+          <h5 class="name">
+            <span><%- all_apps_features_offline_title %></span>
+            <i class="fas fa-broadcast-tower"></i>
+          </h5>
+          <div class="info"><%- all_apps_features_offline_desc %></div>
+        </div>
+
       </div>
     </section>
-    
     
     <%- include('includes/footer.ejs') %>
   </body>

@@ -24,12 +24,13 @@ module.exports = {
   
   // downloads
   "downloads_box_title": "Downloads",
-  "early_access_notice": `Cardinal is early access software. Follow the progress <a href="https://old.reddit.com/r/CardinalMediaServer" target="_blank">here</a>.`,
+  "early_access_notice": `Cardinal is early access software. Follow the progress <a href="https://old.reddit.com/r/cardinalapps" target="_blank">here</a>.`,
   "in_development": "In Development",
   "development_planned": "Planned",
 
   "downloads_server_name": "Cardinal Server",
   "downloads_server_desc": "Media server that indexes your files and makes them available for other Cardinal apps to use.",
+  "downloads_server_all": "See all Cardinal Server features",
   "downloads_server_features": `
                                <li>Free</li>
                                <li>No ads or tracking</li>
@@ -37,11 +38,11 @@ module.exports = {
                                <li>Fully supports music files. Movies, TV, photos, and books coming soon</li>
                                <li>Central library that keeps all devices in sync</li>
                                <li>See and manage connected devices</li>
-                               <li class="all"><a href="/en/cardinal-server">See all Cardinal Server features</a></li>
                                `,
 
   "downloads_music_name": "Cardinal Music",
   "downloads_music_desc": "Music player & library for high fidelity audio playback and music collection management.",
+  "downloads_music_all": "See all Cardinal Music features",
   "downloads_music_features": `
                               <li>Free</li>
                               <li>No ads or tracking</li>
@@ -50,12 +51,12 @@ module.exports = {
                               <li>Smart music suggestions</li>
                               <li>Create and manage playlists</li>
                               <li>Waveform seeking</li>
-                              <li>Supports all major file types; flac, mp3, m4a, opus, and more</li>
-                              <li class="all"><a href="/en/cardinal-music">See all Cardinal Music features</a></li>
+                              <li>Supports all major file types; flac, mp3, and more</li>
                               `,
 
   "downloads_photos_name": "Cardinal Photos",
   "downloads_photos_desc": "Photo gallery that makes it easy to view and organize all of your digital photos.",
+  "downloads_photos_all": "See all Cardinal Photos features",
   "downloads_photos_features": `
                               <li>Free</li>
                               <li>No ads or tracking</li>
@@ -64,23 +65,23 @@ module.exports = {
                               <li>Organize your photos into libraries</li>
                               <li>Sort by year, tag, rating, and more</li>
                               <li>Easily keep selected photos private and hidden</li>
-                              <!--<li class="all"><a href="/en/cardinal-music">See all Cardinal Music features</a></li>-->
                               `,
 
   "downloads_cinema_name": "Cardinal TV & Movies",
   "downloads_cinema_desc": "Watch and curate your TV shows & movies while enjoying modern video streaming features.",
+  "downloads_cinema_all": "See all Cardinal TV & Movies features",
   "downloads_cinema_features": `
                               <li>Free</li>
                               <li>No ads or tracking</li>
-                              <li>Replicate the cable TV experience with channels and lineups</li>
+                              <li>Replicate the cable TV experience with channels</li>
                               <li>Full quality direct streaming</li>
                               <li>Shuffle TV shows by season or series</li>
                               <li>Transfer files to your devices for offline use</li>
-                              <!--<li class="all"><a href="/en/cardinal-music">See all Cardinal Music features</a></li>-->
                               `,
 
   "downloads_books_name": "Cardinal Books",
   "downloads_books_desc": "Organize your e-books and audiobooks together in one library, and read them on all your devices.",
+  "downloads_books_all": "See all Cardinal Books features",
   "downloads_books_features": `
                               <li>Free</li>
                               <li>No ads or tracking</li>
@@ -89,17 +90,27 @@ module.exports = {
                               <li>Fine tuned typography controls</li>
                               <li>Blur upcoming paragraphs until manual uncovering</li>
                               <li>Transfer files to your devices for offline use</li>
-                              <!--<li class="all"><a href="/en/cardinal-music">See all Cardinal Music features</a></li>-->
                               `,
 
   // features
   "all_apps_features_title": "Cardinal Core Values",
   "all_apps_features_privacy_title": "Zero Data Collection",
-  "all_apps_features_privacy_desc": `<p>Cardinal apps don't collect any data whatsoever and never phone home.</p>`,
+  "all_apps_features_privacy_desc": `<p>Cardinal apps don't collect any data whatsoever and never phone home. Privacy is non-negotiable when it comes to your personal files.</p>`,
   "all_apps_features_adfree_title": "No Ads, No Marketing",
   "all_apps_features_adfree_desc": `<p>Ads ruin everything. Cardinal apps will never run ads of any kind, and will never try to pull any stealthy marketing shenanigans.</p>`,
   "all_apps_features_noforce_title": "No Forced Updates",
-  "all_apps_features_noforce_desc": `<p>Nine out of ten dentists agree that it's annoying when your open software and it immediatly forces you to update.</p>`,
+  "all_apps_features_noforce_desc": `<p>Nine out of ten dentists agree that it's annoying when you launch software and it immediatly forces you to update. Take your time to update, or disable updates altogether if that's your thing.</p>`,
+  "all_apps_features_offline_title": "Offline First",
+  "all_apps_features_offline_desc": `<p>Cardinal apps use your file metadata first and foremost, and don't rely on an internet connection for basic functionality. Your media will always be accessible, even during the next apocalypse.</p>`,
+  
+  // social
+  "social_title": `Get Involved`,
+  "social_reddit_name": `On Reddit`,
+  "social_reddit_link": `https://old.reddit.com/r/cardinalapps`,
+  "social_reddit_desc": `General discussion and feedback`,
+  "social_github_name": `On GitHub`,
+  "social_github_link": `https://github.com/somebeaver`,
+  "social_github_desc": `For collaborators`,
 
   // images
   "logo_alt": "Cardinal logo",
@@ -129,10 +140,14 @@ module.exports = {
   "pp_page_title": "Cardinal Privacy Policy",
   "pp_meta_desc": "Cardinal Privacy Policy",
   "pp_title": "Privacy Policy",
-  "pp_body": `<h6>During the intended usage of any Cardinal application:</h6>
+  "pp_body": `<h6>During the intended usage* of any Cardinal application:</h6>
               <p>No data is collected.</p>
               <h6>When updating a Cardinal application using the built-in updater:</h6>
               <p>The application will connect to a GitHub server. The data that GitHub may record is out of Cardinal's control.</p>
               <h6>When you use the Cardinal website:</h6>
-              <p>The Cardinal website uses Google Analytics and Google Fonts. The data that Google may record is out of Cardinal's control.</p>`,
+              <p>The Cardinal website uses Google Analytics and Google Fonts. The data that Google may record is out of Cardinal's control.</p>
+              <ul class="footnotes">
+               <li>* Intended usage means using the Cardinal software as it was designed to be used. Why is this important? Cardinal ships with 3rd party open source code (rendering engine, Node.js, and more), which the user can access by bypassing the Cardinal code. If bypassing or manipulating Cardinal code causes untended server communication (i.e., crashing Chromium in a way that automatically sends a bug report to a 3rd party), this would not be considered intended usage.</li>
+              </ul>
+              `,
 }

@@ -1,15 +1,38 @@
 <footer>
-  <div class="">Copyright © <%- new Date().getFullYear() %></div>
+  <section id="social-media" class="wrap-m zebra">
+    <h4 class="social-title"><%- social_title %></h5>
 
-  <div class="by">
-    Made by <a href="https://github.com/somebeaver" target="_blank">somebeaver</a> 🌴
-  </div>
+    <div class="social-links">
+      <a href="<%- social_reddit_link %>" class="social-link" target="_blank" rel="nofollow">
+        <div class="icon">
+          <i class="fab fa-reddit-square" title="Reddit"></i>
+        </div>
+        <p class="name"><%- social_reddit_name %></p>
+        <p class="desc"><%- social_reddit_desc %></p>
+      </a>
+      <a href="<%- social_github_link %>" class="social-link" target="_blank" rel="nofollow">
+        <div class="icon">
+         <i class="fab fa-github-square" title="Github"></i>
+        </div>
+        <p class="name"><%- social_github_name %></p>
+        <p class="desc"><%- social_github_desc %></p>
+      </a>
+    </div>
+  </section>
 
-  <div>
-    <nav id="footer-nav">
-      <a href="/<%- lang %>/terms-and-conditions"><%- footer_nav_toc %></a>
-      <a href="/<%- lang %>/privacy-policy"><%- footer_nav_privacy_policy %></a>
-    </nav>
+  <div class="inline">
+    <div>Copyright © <%- new Date().getFullYear() %></div>
+
+    <div class="by">
+      Made by <a href="https://github.com/somebeaver" target="_blank">somebeaver</a> 🌴
+    </div>
+
+    <div>
+      <nav id="footer-nav">
+        <a href="/<%- lang %>/terms-and-conditions"><%- footer_nav_toc %></a>
+        <a href="/<%- lang %>/privacy-policy"><%- footer_nav_privacy_policy %></a>
+      </nav>
+    </div>
   </div>
 
   <div class="attributions">

@@ -66,7 +66,7 @@ body.dark {
 body.light {
   --bg: #ffffff;
   --bg-2: #e4e4e4;
-  --bg-3: #f1f1f1;
+  --bg-3: #dedede;
   --btn-color: #cfcfcf;
   --btn-color-hover: #acacac;
   --text-color: #202020;
@@ -165,6 +165,10 @@ li {
 
 em {
   font-style: italic;
+}
+
+a p {
+  cursor: pointer;
 }
 
 .wrap-xl {
@@ -371,10 +375,24 @@ svg path {
 #downloads .item {
   width: calc(33% - 20px);
   margin: 0 10px 20px;
-  padding: 40px 20px 120px;
+  padding: 40px 20px 155px;
   border-radius: 30px;
   position: relative;
   background-color: var(--bg-3);
+}
+
+#downloads .item.in-development {
+  padding-bottom: 100px;
+}
+
+#downloads .item.in-development .platforms p{
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  text-align: center;
+  color: var(--accent);
+  background: var(--bg);
+  cursor: default;
 }
 
 #downloads .meta .name {
@@ -413,18 +431,22 @@ svg path {
   position: relative;
 }
 
-#downloads .item .features li.all {
-  padding-top: 10px;
-  list-style: none;
+#downloads .item .all {
+  margin-bottom: 10px;
   text-align: center;
-  font-weight: 600;
+  font: 600 13px var(--base-font);
+  color: var(--accent);
+}
+
+#downloads .item .all a {
+  color: var(--accent);
 }
 
 #downloads .item .features li a {
   color: var(--accent);
 }
 
-#downloads .item .features li:not(.all):before {
+#downloads .item .features li:before {
   content: '';
   width: 4px;
   height: 4px;
@@ -450,16 +472,6 @@ svg path {
   width: 100%;
   margin-bottom: 10px;
   justify-content: center;
-}
-
-.in-development {
-  padding: 10px;
-  margin-bottom: 12px;
-  border-radius: 4px;
-  text-align: center;
-  color: var(--accent);
-  background: var(--bg);
-  cursor: default;
 }
 
 .btn {
@@ -521,7 +533,15 @@ svg path {
 }
 
 .core-value .name {
+  display: flex;
+  justify-content: space-between;
+}
 
+.core-value .name i {
+  width: 40px;
+  text-align: center;
+  font-size: 30px;
+  color: var(--accent-color);
 }
 
 .core-value .info p {
@@ -529,16 +549,76 @@ svg path {
   font: 15px/1.6em var(--base-font);
 }
 
+#social-media {
+  width: 100%;
+}
+
+#social-media .social-title {
+  margin-bottom: 20px;
+  font: 600 22px var(--base-font);
+  text-align: center;
+  color: var(--text-color);
+}
+
+#social-media .social-links {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#social-media .social-link {
+  width: 150px;
+  margin: 0 10px;
+  display: block;
+  padding: 25px 10px;
+  border-radius: 8px;
+  background: var(--bg-2);
+}
+
+#social-media .social-link:hover {
+  background: var(--bg-3);
+  text-decoration: none;
+}
+
+#social-media .social-link .icon {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#social-media .social-link .name {
+  margin-bottom: 10px;
+  text-align: center;
+  font: 600 14px var(--base-font);
+}
+
+#social-media .social-link .desc {
+  margin-bottom: 0;
+  text-align: center;
+  font: 12px var(--base-font);
+}
+
+#social-media .social-links i {
+  font-size: 60px;
+  color: var(--text-color-2);
+}
+
 footer {
   width: 100%;
   padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .inline {
+  width: 100%;
+  margin: 0 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-footer > div {
+footer .inline > div {
   margin: 0 20px;
   font: 13px var(--base-font);
   color: var(--text-color-2);
@@ -577,6 +657,14 @@ footer .attributions a:hover {
   margin-bottom: 100px;
 }
 
+.footnotes {
+  padding-top: 50px;
+}
+
+.footnotes li {
+  font: 10px var(--base-font);
+  color: var(--text-color-3);
+}
 
 
 
