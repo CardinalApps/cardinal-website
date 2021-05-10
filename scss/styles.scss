@@ -1,0 +1,37 @@
+@import './reset.scss';
+@import './general.scss';
+@import './responsive.scss';
+
+:root {
+  --accent: rgb(234, 103, 103);
+  --base-font: 'Open sans', sans-serif;
+  --accent-font: 'Yantramanav', sans-serif;
+}
+
+body.dark {
+  --bg: #272727;
+  --bg-2: #353535;
+  --bg-3: #3d3d3d;
+  --bg-4: #222222;
+  --btn-color: #4b4b4b;
+  --btn-color-hover: #444444;
+  --text-color: #ececec;
+  --text-color-2: #d4d4d4;
+  --text-color-3: #9e9e9e;
+  --text-color-4: #525252;
+  --border-color: #494949;
+}
+
+body.light {
+  --bg: #ffffff;
+  --bg-2: #e4e4e4;
+  --bg-3: #dedede;
+  --bg-4: #f0f0f0;
+  --btn-color: #cfcfcf;
+  --btn-color-hover: #acacac;
+  --text-color: #202020;
+  --text-color-2: #202020;
+  --text-color-3: #6b6b6b;
+  --text-color-4: #cecece;
+  --border-color: #cecece;
+}

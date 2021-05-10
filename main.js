@@ -67,6 +67,29 @@ app.get('/fr', (req, res) => {
 })
 
 /**
+ * Route: /getting-started
+ * 
+ * Guide for getting started.
+ */
+app.get('/en/getting-started', (req, res) => {
+  let vars = {
+    lang: 'en',
+    ...i18n.en,
+  }
+
+  res.render('getting-started.ejs', vars)
+})
+
+app.get('/fr/getting-started', (req, res) => {
+  let vars = {
+    lang: 'fr',
+    ...i18n.fr,
+  }
+
+  res.render('getting-started.ejs', vars)
+})
+
+/**
  * Route: /terms-and-conditions
  * 
  * The home page.

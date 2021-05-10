@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [{
+      "label": "compileScss",
+      "command": "node-sass --output-style compact ./scss/styles.scss ./public/styles.css",
+      "type": "shell",
+      "presentation": {
+        "echo": true,
+        "reveal": "never",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+  }]
+}

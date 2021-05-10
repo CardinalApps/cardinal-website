@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="<%- lang %>">
+  <head>
+    <%- include('includes/bird.ejs') %>
+    
+    <title><%= getting_started_title %></title>
+    <meta name="description" content="<%- getting_started_desc %>">
+    
+    <meta property="og:title" content="<%= getting_started_title %>">
+    <meta property="og:description" content="<%- getting_started_desc %>">
+    <meta property="og:url" content="https://cardinalapps.xyz/<%- lang %>">
+
+    <link rel="canonical" href="https://cardinalapps.xyz/<%- lang %>">
+
+    <%- include('includes/head.ejs') %>
+  </head>
+  
+  <body>
+    <%- include('includes/header.ejs') %>
+
+    <section id="getting-started-top" class="first landing">
+      <div class="wrap-m">
+        <h1 class="inner"><%- getting_started_title %></h1>
+        <h2 class="inner"><%- getting_started_subtitle %></h1>
+      </div>
+    </section>
+
+    <section id="getting-started-steps">
+      <div class="wrap-s">
+        <div class="step">
+          <div class="num">1</div>
+
+          <div class="content">
+            <h3 class="step-title"><%- getting_started_step_1_title %></h3>
+            <div class="step-desc"><%- getting_started_step_1_desc %></div>
+
+            <div class="buttons">
+              <%- include('includes/buttons/server-macos.ejs') %>
+              <%- include('includes/buttons/server-windows.ejs') %>
+            </div>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="num">2</div>
+
+          <div class="content">
+            <h3 class="step-title"><%- getting_started_step_2_title %></h3>
+            <div class="step-desc"><%- getting_started_step_2_desc %></div>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="num">3</div>
+
+          <div class="content">
+            <h3 class="step-title"><%- getting_started_step_3_title %></h3>
+            <div class="step-desc"><%- getting_started_step_3_desc %></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <%- include('includes/footer.ejs') %>
+  </body>
+
+  <%- include('includes/after-body-script.ejs') %>
+</html>

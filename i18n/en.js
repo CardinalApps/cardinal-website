@@ -1,5 +1,7 @@
 module.exports = {
+  "download_url_server": "https://github.com/somebeaver/Cardinal-Server",
   "download_url_server_latest": "https://github.com/somebeaver/Cardinal-Server/releases/latest",
+  "download_url_music": "https://github.com/somebeaver/Cardinal-Music",
   "download_url_music_latest": "https://github.com/somebeaver/Cardinal-Music/releases/latest",
 
   // general
@@ -9,9 +11,11 @@ module.exports = {
   "app_name_cinema": "Cardinal Cinema",
   "app_name_books": "Cardinal Books",
 
-  // home meta
-  "home_title": "Cardinal Media Server - Free media server and apps for your music, TV & movies, photos, and books.",
+  // SEO
+  "home_title": "Cardinal - Free media server and apps for your music, TV & movies, photos, and books",
   "home_meta_desc": "Listen to your music, watch your TV & movies, back up your photos, and do everything else that a modern media server does.",
+  "getting_started_title": "Cardinal - Getting Started",
+  "getting_started_desc": "Learn how to quickly get started with the Cardinal ecosystem.",
 
   // lang switcher
   "current_lang_prefix": "Lang - ",
@@ -22,7 +26,7 @@ module.exports = {
   "nav_theme_switcher_title": "Switch between light/dark theme",
 
   // landing
-  "landing_line_1": "Cardinal is an ecosystem of apps for all of your media.",
+  "landing_line_1": "Cardinal is an ecosystem of apps for all your media.",
   "landing_line_desc": `
                         <p>Just show the server where your files are, and enjoy your music, TV & movies, photos, and books on all your smart devices.</p>
                         <p class="emojis">🎧🍿🌉📚</p>`,
@@ -109,6 +113,23 @@ module.exports = {
   "all_apps_features_noforce_desc": `<p>Nine out of ten dentists agree that it's annoying when you launch software and it immediatly forces you to update. Take your time to update, or disable updates altogether if that's your thing.</p>`,
   "all_apps_features_offline_title": "Offline First",
   "all_apps_features_offline_desc": `<p>Cardinal apps use your file metadata first and foremost, and don't rely on an internet connection for basic functionality. Your media will always be accessible, even during the next apocalypse.</p>`,
+  
+  // getting started
+  "getting_started_title": `Getting Started is Easy`,
+  "getting_started_subtitle": `Cardinal doesn't require an account or anything like that, and getting set up with the ecosystem is super straightforward.`,
+  "getting_started_step_1_title": `Install the server`,
+  "getting_started_step_1_desc": `<p>No matter which Cardinal apps you want to use, the server needs to be installed first. Installers are available for macOS and Windows. Linux support is planned.</p>
+                                  <p>Once it's installed, start it up.</p>
+                                  `,
+  "getting_started_step_2_title": `Index your media files`,
+  "getting_started_step_2_desc": `<p>All the server needs to know is where your media files are. Drag-n-drop the folder(s) into Cardinal Server and press the big button to start the indexing process.</p>
+                                  <p>You don't need to wait until this is done - you can go to step 3 now.</p>
+                                  <p>But once it's done, make sure to leave Cardinal Server running in the background; the other Cardinal apps need it.</p>
+                                  `,
+  "getting_started_step_3_title": `Use other Cardinal apps`,
+  "getting_started_step_3_desc": `<p>All of the media that your server indexes is available to you thorugh the other Cardinal apps on the same network. Each app is designed specifically for that kind of media.</p>
+                                  <p>The first time you open another Cardinal app, it will ask you for the address of your server. That's all you need to connect!</p>
+                                  `,
   
   // social
   "social_title": `Get Involved`,
