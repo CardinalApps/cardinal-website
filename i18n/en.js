@@ -3,8 +3,8 @@ module.exports = {
   "download_url_music_latest": "https://github.com/somebeaver/Cardinal-Music/releases/latest",
 
   // home meta
-  "home_title": "Cardinal Media Server - Free media server for your music, movies, TV, photos, and documents.",
-  "home_meta_desc": "Cardinal Media Server is ad-free, privacy focused freeware that runs on macOS and Windows and makes your personal media available to your various devices.",
+  "home_title": "Cardinal Media Server - Free media server and apps for your music, TV & movies, photos, and books.",
+  "home_meta_desc": "Listen to your music, watch your TV & movies, back up your photos, and do everything else that a modern media server does.",
 
   // lang switcher
   "current_lang_prefix": "Lang - ",
@@ -14,8 +14,10 @@ module.exports = {
   "nav_theme_switcher_title": "Switch between light/dark theme",
 
   // landing
-  "landing_line_1": "Cardinal is a free media server for your music, movies, TV, photos, and documents.",
-  "landing_line_2": "It's made for people who curate their own media collection and want to run their own little cloud.",
+  "landing_line_1": "Cardinal is an ecosystem of apps for all of your media.",
+  "landing_line_desc": `
+                        <p>Just show the server where your files are, and enjoy your music, TV & movies, photos, and books on all your smart devices.</p>
+                        <p class="emojis">🎧🍿🌉📚</p>`,
   "download_mac": "Download for macOS<sup>®</sup>",
   "download_win": `Download for Windows<sup>®</sup> <sup class="beta">(beta)</sup>`,
   "download_agreement": `By downloading Cardinal, you agree to the <a href="/en/terms-and-conditions">Terms & Conditions</a> and <a href="/en/privacy-policy">Privacy Policy</a>.`,
@@ -23,44 +25,95 @@ module.exports = {
   // downloads
   "downloads_box_title": "Downloads",
   "early_access_notice": `Cardinal is early access software. Follow the progress <a href="https://old.reddit.com/r/CardinalMediaServer" target="_blank">here</a>.`,
+  "in_development": "In Development",
+  "development_planned": "Planned",
 
   "downloads_server_name": "Cardinal Server",
-  "downloads_server_desc": "Media Server that indexes your files and makes them available for other Cardinal apps to consume.",
+  "downloads_server_desc": "Media server that indexes your files and makes them available for other Cardinal apps to use.",
   "downloads_server_features": `
                                <li>Free</li>
+                               <li>No ads or tracking</li>
                                <li>Runs on macOS and Windows</li>
-                               <li>Fully supports music files</li>
-                               <li>Movies, TV, photos, and documents coming soon</li>
-                               <li>See and manage devices that are using the server</li>
-                               <!--<li><a href="/en/cardinal-server">See all Cardinal Server features</a></li>-->
+                               <li>Fully supports music files. Movies, TV, photos, and books coming soon</li>
+                               <li>Central library that keeps all devices in sync</li>
+                               <li>See and manage connected devices</li>
+                               <li class="all"><a href="/en/cardinal-server">See all Cardinal Server features</a></li>
                                `,
+
   "downloads_music_name": "Cardinal Music",
-  "downloads_music_desc": "Music player & library for desktop and mobile.",
+  "downloads_music_desc": "Music player & library for high fidelity audio playback and music collection management.",
   "downloads_music_features": `
                               <li>Free</li>
-                              <li>Runs on macOS and Windows</li>
-                              <li>Smart home screen with music suggestions</li>
-                              <li>Browse by artist, album, track, genre, and more</li>
+                              <li>No ads or tracking</li>
+                              <li>Listen to your music on desktop and mobile</li>
+                              <li>Transfer files to your devices for offline playback</li>
+                              <li>Smart music suggestions</li>
                               <li>Create and manage playlists</li>
-                              <li>Search through your library</li>
                               <li>Waveform seeking</li>
-                              <!--<li><a href="/en/cardinal-music">See all Cardinal Music features</a></li>-->
+                              <li>Supports all major file types; flac, mp3, m4a, opus, and more</li>
+                              <li class="all"><a href="/en/cardinal-music">See all Cardinal Music features</a></li>
+                              `,
+
+  "downloads_photos_name": "Cardinal Photos",
+  "downloads_photos_desc": "Photo gallery that makes it easy to view and organize all of your digital photos.",
+  "downloads_photos_features": `
+                              <li>Free</li>
+                              <li>No ads or tracking</li>
+                              <li>Browse your photos on desktop and mobile</li>
+                              <li>Automatically back up your photos to Cardinal Server</li>
+                              <li>Organize your photos into libraries</li>
+                              <li>Sort by year, tag, rating, and more</li>
+                              <li>Easily keep selected photos private and hidden</li>
+                              <!--<li class="all"><a href="/en/cardinal-music">See all Cardinal Music features</a></li>-->
+                              `,
+
+  "downloads_cinema_name": "Cardinal TV & Movies",
+  "downloads_cinema_desc": "Watch and curate your TV shows & movies while enjoying modern video streaming features.",
+  "downloads_cinema_features": `
+                              <li>Free</li>
+                              <li>No ads or tracking</li>
+                              <li>Replicate the cable TV experience with channels and lineups</li>
+                              <li>Full quality direct streaming</li>
+                              <li>Shuffle TV shows by season or series</li>
+                              <li>Transfer files to your devices for offline use</li>
+                              <!--<li class="all"><a href="/en/cardinal-music">See all Cardinal Music features</a></li>-->
+                              `,
+
+  "downloads_books_name": "Cardinal Books",
+  "downloads_books_desc": "Organize your e-books and audiobooks together in one library, and read them on all your devices.",
+  "downloads_books_features": `
+                              <li>Free</li>
+                              <li>No ads or tracking</li>
+                              <li>Unified book library</li>
+                              <li>Jump to chapters and phrases</li>
+                              <li>Fine tuned typography controls</li>
+                              <li>Blur upcoming paragraphs until manual uncovering</li>
+                              <li>Transfer files to your devices for offline use</li>
+                              <!--<li class="all"><a href="/en/cardinal-music">See all Cardinal Music features</a></li>-->
                               `,
 
   // features
-  "all_apps_features_title": "Cardinal Core Principles",
+  "all_apps_features_title": "Cardinal Core Values",
   "all_apps_features_privacy_title": "Zero Data Collection",
-  "all_apps_features_privacy_desc": `<p>Cardinal apps don't collect any data whatsoever, and won't connect to the internet unless it's to perform core functionality like updating or streaming media data.</p>`,
+  "all_apps_features_privacy_desc": `<p>Cardinal apps don't collect any data whatsoever and never phone home.</p>`,
   "all_apps_features_adfree_title": "No Ads, No Marketing",
-  "all_apps_features_adfree_desc": `<p>Ads suck and ruin everything. Cardinal apps will never run ads of any kind, and will never try to pull any stealthy marketing shenanigans.</p>`,
+  "all_apps_features_adfree_desc": `<p>Ads ruin everything. Cardinal apps will never run ads of any kind, and will never try to pull any stealthy marketing shenanigans.</p>`,
+  "all_apps_features_noforce_title": "No Forced Updates",
+  "all_apps_features_noforce_desc": `<p>Nine out of ten dentists agree that it's annoying when your open software and it immediatly forces you to update.</p>`,
 
   // images
   "logo_alt": "Cardinal logo",
   "logo_title": "Cardinal",
   "server_icon_alt": "Cardinal Server app icon",
-  "server_icon_title": "Cardinal Server App",
+  "server_icon_title": "Cardinal Server app",
   "music_icon_alt": "Cardinal Music app icon",
-  "music_icon_title": "Cardinal Music App",
+  "music_icon_title": "Cardinal Music app",
+  "photos_icon_alt": "Cardinal Photos app icon",
+  "photos_icon_title": "Cardinal Photos app",
+  "cinema_icon_alt": "Cardinal TV & Movies app icon",
+  "cinema_icon_title": "Cardinal TV & Movies & TV app",
+  "books_icon_alt": "Cardinal Books app icon",
+  "books_icon_title": "Cardinal Books app",
 
   // footer
   "footer_nav_toc": "Terms & Conditions",

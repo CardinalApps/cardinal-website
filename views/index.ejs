@@ -18,10 +18,10 @@
   <body>
     <%- include('includes/header.ejs') %>
 
-    <section id="landing" class="first home-section">
+    <section id="landing" class="home-section">
       <div class="wrap-l">
         <h1><%- landing_line_1 %></h1>
-        <h2><%- landing_line_2 %></h2>
+        <div class="landing-desc"><%- landing_line_desc %></div>
       </div>
     </section>
 
@@ -30,6 +30,7 @@
 
       <div class="subtitle-notices">
         <p class="early-access"><%- early_access_notice %></p>
+        <p class="download-agreement"><%- download_agreement %></p>
       </div>
 
       <div class="box">
@@ -40,20 +41,16 @@
             <div class="icon">
               <img src="/icons/logo-server.svg" alt="<%- server_icon_alt %>" title="<%- server_icon_title %>">
             </div>
-
             <div class="meta">
               <h4 class="name"><%- downloads_server_name %></h4>
-
               <p class="description"><%- downloads_server_desc %></p>
-
               <ul class="features">
                 <%- downloads_server_features %>
               </ul>
-
-              <div class="platforms">
-                <%- include('includes/buttons/server-macos.ejs') %>
-                <%- include('includes/buttons/server-windows.ejs') %>
-              </div>
+            </div>
+            <div class="platforms">
+              <%- include('includes/buttons/server-macos.ejs') %>
+              <%- include('includes/buttons/server-windows.ejs') %>
             </div>
           </div>
 
@@ -62,45 +59,88 @@
             <div class="icon">
               <img src="/icons/logo-music.svg" alt="<%- music_icon_alt %>" title="<%- music_icon_title %>">
             </div>
-
             <div class="meta">
               <h4 class="name"><%- downloads_music_name %></h4>
-
               <p class="description"><%- downloads_music_desc %></p>
-
               <ul class="features">
                 <%- downloads_music_features %>
               </ul>
+            </div>
+            <div class="platforms">
+              <%- include('includes/buttons/music-macos.ejs') %>
+              <%- include('includes/buttons/music-windows.ejs') %>
+            </div>
+          </div>
 
-              <div class="platforms">
-                <%- include('includes/buttons/music-macos.ejs') %>
-                <%- include('includes/buttons/music-windows.ejs') %>
-              </div>
+          <!-- photos -->
+          <div class="item">
+            <div class="icon">
+              <img src="/icons/logo-music.svg" alt="<%- photos_icon_alt %>" title="<%- photos_icon_title %>">
+            </div>
+            <div class="meta">
+              <h4 class="name"><%- downloads_photos_name %></h4>
+              <p class="description"><%- downloads_photos_desc %></p>
+              <ul class="features">
+                <%- downloads_photos_features %>
+              </ul>
+            </div>
+            <div class="platforms">
+              <p class="in-development"><%- in_development %></p>
+            </div>
+          </div>
+
+          <!-- movies & tv -->
+          <div class="item">
+            <div class="icon">
+              <img src="/icons/logo-music.svg" alt="<%- cinema_icon_alt %>" title="<%- cinema_icon_title %>">
+            </div>
+            <div class="meta">
+              <h4 class="name"><%- downloads_cinema_name %></h4>
+              <p class="description"><%- downloads_cinema_desc %></p>
+              <ul class="features">
+                <%- downloads_cinema_features %>
+              </ul>
+            </div>
+            <div class="platforms">
+              <p class="in-development"><%- development_planned %></p>
+            </div>
+          </div>
+
+          <!-- books -->
+          <div class="item">
+            <div class="icon">
+              <img src="/icons/logo-music.svg" alt="<%- books_icon_alt %>" title="<%- books_icon_title %>">
+            </div>
+            <div class="meta">
+              <h4 class="name"><%- downloads_books_name %></h4>
+              <p class="description"><%- downloads_books_desc %></p>
+              <ul class="features">
+                <%- downloads_books_features %>
+              </ul>
+            </div>
+            <div class="platforms">
+              <p class="in-development"><%- development_planned %></p>
             </div>
           </div>
 
         </div>
       </div>
-
-      <div class="notices">
-        <div class="download-agreement">
-          <%- download_agreement %>
-        </div>
-      </div>
     </section>
 
-    <section id="features" class="wrap-m home-section">
+    <section id="core-values" class="wrap-m home-section">
       <h3><%- all_apps_features_title %></h3>
-
-      <div class="feature-list">
-        <div class="feature">
+      <div class="core-value-list">
+        <div class="core-value">
           <h5 class="name"><%- all_apps_features_privacy_title %></h5>
           <div class="info"><%- all_apps_features_privacy_desc %></div>
         </div>
-
-        <div class="feature">
+        <div class="core-value">
           <h5 class="name"><%- all_apps_features_adfree_title %></h5>
           <div class="info"><%- all_apps_features_adfree_desc %></div>
+        </div>
+        <div class="core-value">
+          <h5 class="name"><%- all_apps_features_noforce_title %></h5>
+          <div class="info"><%- all_apps_features_noforce_desc %></div>
         </div>
       </div>
     </section>
