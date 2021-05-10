@@ -12,13 +12,41 @@
       <nav class="pages">
         <ul>
           <li>
-            <a href="/<%- lang %>/quick-start" class="top-level-item"><%- menu_quickstart %></a>
+            <a href="/<%- lang %>/getting-started" class="top-level-item"><%- menu_getting_started %></a>
           </li>
-          <li>
-            <span class="top-level-item has-dropdown"><%- menu_apps %></span>
-            
+          <li class="has-dropdown">
+            <span class="top-level-item"><%- menu_apps %></span>
             <ul class="dropdown">
-              <li></li>
+              <li>
+                <a href="/<%- lang %>/cardinal-server" class="second-level-item">
+                  <img src="/icons/logo-server.svg" alt="<%- app_name_server %>">
+                  <span><%- app_name_server %></span>
+                </a>
+              </li>
+              <li>
+                <a href="/<%- lang %>/cardinal-music" class="second-level-item">
+                  <img src="/icons/logo-music.svg" alt="<%- app_name_music %>">
+                  <span><%- app_name_music %></span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;" class="second-level-item">
+                  <img src="/icons/logo-cinema.svg" alt="<%- app_name_cinema %>">
+                  <span><%- app_name_cinema %><span class="cs">Coming soon</span></span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;" class="second-level-item">
+                  <img src="/icons/logo-photos.svg" alt="<%- app_name_photos %>">
+                  <span><%- app_name_photos %><span class="cs">Coming soon</span></span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;" class="second-level-item">
+                  <img src="/icons/logo-books.svg" alt="<%- app_name_books %>">
+                  <span><%- app_name_books %><span class="cs">Coming soon</span></span>
+                </a>
+              </li>
             </ul>
           </li>
         </ul>

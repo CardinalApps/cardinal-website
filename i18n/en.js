@@ -17,9 +17,8 @@ module.exports = {
   "current_lang_prefix": "Lang - ",
 
   // nav
-  "menu_quickstart": "Switch between light/dark theme",
-  "menu_apps": "Switch between light/dark theme",
-  "menu_apps_server": "Switch between light/dark theme",
+  "menu_getting_started": "Getting Started",
+  "menu_apps": "Apps",
   "nav_theme_switcher_title": "Switch between light/dark theme",
 
   // landing

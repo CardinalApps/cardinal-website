@@ -54,6 +54,7 @@ body.dark {
   --bg: #272727;
   --bg-2: #353535;
   --bg-3: #3d3d3d;
+  --bg-4: #222222;
   --btn-color: #4b4b4b;
   --btn-color-hover: #444444;
   --text-color: #ececec;
@@ -67,6 +68,7 @@ body.light {
   --bg: #ffffff;
   --bg-2: #e4e4e4;
   --bg-3: #dedede;
+  --bg-4: #f0f0f0;
   --btn-color: #cfcfcf;
   --btn-color-hover: #acacac;
   --text-color: #202020;
@@ -212,7 +214,7 @@ header#site-header {
 
 header#site-header .wrap-xl {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -222,6 +224,10 @@ header#site-header .right {
   justify-content: flex-end;
   position: relative;
   bottom: -3px;
+}
+
+header .social-icons {
+  padding-left: 20px;
 }
 
 header .social-icons i {
@@ -258,6 +264,103 @@ nav {
 
 nav a {
   margin: 0 5px;
+}
+
+nav.pages {
+  
+}
+
+nav.pages ul {
+  display: flex;
+  align-items: center;
+}
+
+nav.pages li {
+  height: 60px;
+  padding-right: 20px;
+  position: relative;
+}
+
+nav.pages .top-level-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font: 600 16px var(--base-font);
+  color: var(--accent);
+}
+
+.has-dropdown {
+  position: relative;
+}
+
+.has-dropdown:hover .dropdown {
+  display: block !important;
+}
+
+.has-dropdown .top-level-item:after {
+  content: '';
+  width: 0; 
+  height: 0;
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  border-radius: 100%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid var(--accent);
+}
+
+nav.pages .second-level-item {
+  font: 400 14px var(--base-font);
+  color: var(--accent);
+}
+
+.dropdown {
+  width: 200px;
+  padding: 10px;
+  border-radius: 8px;
+  position: absolute;
+  top: 100%;
+  left: -70px;
+  display: none !important;
+  background-color: var(--bg-4);
+}
+
+nav.pages .dropdown li {
+  height: auto;
+  padding-right: 0;
+  margin-bottom: 5px;
+}
+
+nav.pages .dropdown li:last-of-type {
+  margin-bottom: 0;
+}
+
+.dropdown li a {
+  width: 100%;
+  padding: 5px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  font: 500 14px var(--base-font);
+  transition: background-color 200ms;
+}
+
+.dropdown li a:hover {
+  text-decoration: none;
+  background-color: var(--bg-2);
+}
+
+.dropdown li img {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.dropdown .cs {
+  display: block;
+  font-size: 10px;
+  color: var(--text-color-2);
 }
 
 nav a:last-of-type { margin-right: 0; }
@@ -331,7 +434,7 @@ svg path {
 }
 
 #landing {
-  padding: 180px 0 120px;
+  padding: 190px 0 120px;
   background-color: var(--bg-2);
 }
 
