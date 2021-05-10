@@ -2,6 +2,13 @@ module.exports = {
   "download_url_server_latest": "https://github.com/somebeaver/Cardinal-Server/releases/latest",
   "download_url_music_latest": "https://github.com/somebeaver/Cardinal-Music/releases/latest",
 
+  // general
+  "app_name_server": "Cardinal Server",
+  "app_name_music": "Cardinal Music",
+  "app_name_photos": "Cardinal Photos",
+  "app_name_cinema": "Cardinal Cinema",
+  "app_name_books": "Cardinal Books",
+
   // home meta
   "home_title": "Cardinal Media Server - Free media server and apps for your music, TV & movies, photos, and books.",
   "home_meta_desc": "Listen to your music, watch your TV & movies, back up your photos, and do everything else that a modern media server does.",
@@ -10,7 +17,9 @@ module.exports = {
   "current_lang_prefix": "Lang - ",
 
   // nav
-  "nav_github": "GitHub",
+  "menu_quickstart": "Switch between light/dark theme",
+  "menu_apps": "Switch between light/dark theme",
+  "menu_apps_server": "Switch between light/dark theme",
   "nav_theme_switcher_title": "Switch between light/dark theme",
 
   // landing
@@ -28,7 +37,6 @@ module.exports = {
   "in_development": "In Development",
   "development_planned": "Planned",
 
-  "downloads_server_name": "Cardinal Server",
   "downloads_server_desc": "Media server that indexes your files and makes them available for other Cardinal apps to use.",
   "downloads_server_all": "See all Cardinal Server features",
   "downloads_server_features": `

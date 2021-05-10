@@ -224,6 +224,10 @@ header#site-header .right {
   bottom: -3px;
 }
 
+header .social-icons i {
+  font-size: 28px;
+}
+
 #logo {
   color: var(--text-color);
   font: 25px var(--accent-font);
@@ -253,7 +257,7 @@ nav {
 }
 
 nav a {
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 nav a:last-of-type { margin-right: 0; }

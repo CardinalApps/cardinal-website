@@ -9,8 +9,28 @@
     </div>
 
     <div class="right">
-      <nav>
-        <a href="https://github.com/somebeaver" target="_blank" rel="nofollow"><%= nav_github %></a>
+      <nav class="pages">
+        <ul>
+          <li>
+            <a href="/<%- lang %>/quick-start" class="top-level-item"><%- menu_quickstart %></a>
+          </li>
+          <li>
+            <span class="top-level-item has-dropdown"><%- menu_apps %></span>
+            
+            <ul class="dropdown">
+              <li></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="social-icons">
+        <a href="<%- social_reddit_link %>" class="social-link" target="_blank" rel="nofollow">
+          <i class="fab fa-reddit-square" title="Reddit"></i>
+        </a>
+        <a href="<%- social_github_link %>" class="social-link" target="_blank" rel="nofollow">
+          <i class="fab fa-github-square" title="GitHub"></i>
+        </a>
       </nav>
 
       <div class="lang-switcher">
