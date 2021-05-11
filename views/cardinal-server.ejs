@@ -15,7 +15,7 @@
     <%- include('includes/head.ejs') %>
   </head>
   
-  <body>
+  <body data-os="<%- os %>">
     <%- include('includes/header.ejs') %>
 
     <section id="single-app-top" class="first landing">
@@ -39,7 +39,9 @@
             <div class="desc"><%- cardinal_server_feature_1_desc %></div>
           </div>
           <div class="screenshot">
-            <img src="/screenshots/server-overview.png" alt="Screenshot">
+            <a href="/screenshots/server-overview.png" target="_blank">
+              <img src="/screenshots/server-overview.png" alt="Screenshot">
+            </a>
           </div>
         </div>
 
@@ -49,7 +51,9 @@
             <div class="desc"><%- cardinal_server_feature_2_desc %></div>
           </div>
           <div class="screenshot">
-            <img src="/screenshots/server-index.png" alt="Screenshot">
+            <a href="/screenshots/server-index.png" target="_blank">
+              <img src="/screenshots/server-index.png" alt="Screenshot">
+            </a>
           </div>
         </div>
 
@@ -59,7 +63,9 @@
             <div class="desc"><%- cardinal_server_feature_3_desc %></div>
           </div>
           <div class="screenshot">
-            <img src="/screenshots/server-devices.png" alt="Screenshot">
+            <a href="/screenshots/server-devices.png" target="_blank">
+              <img src="/screenshots/server-devices.png" alt="Screenshot">
+            </a>
           </div>
         </div>
 

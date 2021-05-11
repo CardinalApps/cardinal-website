@@ -9,6 +9,7 @@
     "ejs": "^3.1.5",
     "express": "~4.16.0",
     "querystring": "~0.2.0",
-    "request": "~2.83.0"
+    "request": "~2.83.0",
+    "ua-parser-js": "^0.7.28"
   }
 }

@@ -20,6 +20,10 @@ body.mobile-menu-open { overflow: hidden; }
 
 body.mobile-menu-open nav.pages { opacity: 1; pointer-events: all; }
 
+body[data-os="mac-os"] .btn.darwin, body[data-os="other"] .btn.darwin { display: inline-flex !important; }
+
+body[data-os="windows"] .btn.win32 { display: inline-flex !important; }
+
 a[href], a[href]:link, a[href]:visited { color: var(--text-color); text-decoration: none; }
 
 a[href]:hover { text-decoration: underline; }
@@ -88,6 +92,8 @@ nav a { margin: 0 5px; }
 
 nav.pages .top-level-item { height: 100%; display: flex; align-items: center; position: relative; font: 600 16px var(--base-font); color: var(--accent); }
 
+nav.pages > ul > li { height: var(--header-height); }
+
 nav.pages ul { display: flex; align-items: center; }
 
 nav.pages li { height: auto; padding-right: 0; margin-right: 20px; }
@@ -96,9 +102,9 @@ nav.pages li { height: auto; padding-right: 0; margin-right: 20px; }
 
 .has-dropdown:hover .dropdown { display: block !important; }
 
-.has-dropdown .top-level-item:after { content: ''; width: 0; height: 0; position: absolute; top: 50%; right: -15px; border-radius: 100%; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid var(--accent); }
+.has-dropdown .top-level-item:after { content: ''; width: 0; height: 0; position: absolute; top: 50%; right: -15px; border-radius: 100%; pointer-events: none; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid var(--accent); }
 
-.dropdown { width: 220px; padding: 10px; border-radius: 8px; position: absolute; top: 100%; left: -70px; display: none !important; background-color: var(--bg-4); }
+.dropdown { width: 220px; padding: 10px; border-radius: 8px; position: absolute; top: 55px; left: -70px; display: none !important; background-color: var(--bg-4); }
 
 .dropdown li { height: auto; padding-right: 0 !important; margin-bottom: 5px; margin-right: 0 !important; }
 
@@ -156,7 +162,7 @@ svg path { fill: var(--text-color); }
 
 #downloads .item { width: calc(33% - 20px); margin: 0 10px 20px; padding: 40px 20px 155px; border-radius: 30px; position: relative; background-color: var(--bg-3); }
 
-#downloads .item .platforms .btn { width: 100%; margin-bottom: 10px; margin-right: 0; display: flex; justify-content: center; }
+#downloads .item .platforms .btn { width: 100%; margin-bottom: 10px; margin-right: 0; justify-content: center; }
 
 #downloads .item.in-development { padding-bottom: 100px; }
 
@@ -189,6 +195,10 @@ svg path { fill: var(--text-color); }
 .btn { padding: 11px 17px; margin: 0 10px 0 0; color: var(--text-color-2); border-radius: 4px; cursor: pointer; font: 14px var(--base-font); background: var(--btn-color); display: inline-flex; align-items: center; user-select: none; transition: all 150ms; }
 
 .btn:hover { text-decoration: none !important; background-color: var(--btn-color-hover); }
+
+.btn.darwin { display: none; }
+
+.btn.win32 { display: none; }
 
 .btn svg { width: 21px; margin-right: 11px; fill: var(--text-color); }
 
@@ -266,7 +276,13 @@ footer .attributions a:hover { text-decoration: none; }
 
 #getting-started-steps .step .buttons { padding-top: 30px; }
 
+#getting-started-steps .step .buttons .btn { display: inline-flex !important; }
+
 #app-features { padding: 90px 0 180px; }
+
+#app-features.music .feature .screenshot { width: 500px; top: -60px; right: -80px; }
+
+#app-features.music .feature.flip .screenshot { right: auto; left: -90px; }
 
 #app-features .feature { margin-bottom: 260px; display: flex; position: relative; border-radius: 20px; background: var(--bg-2); }
 
@@ -278,7 +294,7 @@ footer .attributions a:hover { text-decoration: none; }
 
 #app-features .feature .title { padding-left: 0; color: var(--accent); }
 
-#app-features .feature .screenshot { width: 432px; position: absolute; top: -170px; right: 0; background-size: cover; background-position: center center; }
+#app-features .feature .screenshot { width: 432px; position: absolute; top: -170px; right: 0; }
 
 #app-features .feature .info { max-width: 520px; padding: 60px; }
 
@@ -296,8 +312,12 @@ footer .attributions a:hover { text-decoration: none; }
 
 @media screen and (max-width: 1200px) { #downloads .item { width: calc(50% - 20px); max-width: 375px; } }
 
-@media screen and (max-width: 900px) { #downloads .items { justify-content: center; }
-  #downloads .item { margin-left: auto; margin-right: auto; } }
+@media screen and (max-width: 1000px) { #downloads .items { justify-content: center; }
+  #downloads .item { margin-left: auto; margin-right: auto; }
+  #app-features .feature { margin-bottom: 40px; flex-wrap: wrap; }
+  #app-features .feature .info { width: 100%; }
+  #app-features .feature .screenshot { width: 100% !important; position: static; }
+  #app-features .feature .screenshot img { width: 100%; } }
 
 @media screen and (max-width: 768px) { #hamburger { display: block; }
   #logo img { height: 28px; }
@@ -318,7 +338,7 @@ footer .attributions a:hover { text-decoration: none; }
   .landing h2 { max-width: none; }
   .landing-desc p { font-size: 16px; max-width: 100%; }
   #downloads .item { width: 100%; }
-  .btn { width: 100%; margin-bottom: 10px; }
+  .btn { width: 100%; margin-bottom: 10px; display: inline-block; text-align: center; }
   #faq { margin-bottom: 20px; }
   footer { flex-wrap: wrap; }
   footer > div { margin-bottom: 5px; }
@@ -332,7 +352,7 @@ footer .attributions a:hover { text-decoration: none; }
   #getting-started-steps .step { padding: 60 30p 30px 30px; }
   #getting-started-steps .step .step-title { font-size: 22px; }
   #getting-started-steps .step .step-desc p { font-size: 14px; }
-  #app-features { padding: 80px 0; } }
+  #app-features { padding: 0 0 80px; } }
 
 :root { --accent: rgb(234, 103, 103); --base-font: 'Open sans', sans-serif; --accent-font: 'Yantramanav', sans-serif; --header-height: 72px; }
 

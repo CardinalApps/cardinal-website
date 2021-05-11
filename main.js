@@ -1,3 +1,4 @@
+const UAParser = require('ua-parser-js')
 const express = require('express')
 const cors = require('cors')
 const ejs = require('ejs')
@@ -40,6 +41,18 @@ app.use((req, res, next) => {
     return
   }
 
+  res.templateVars = {}
+
+  // set the OS
+  let ua = new UAParser(req.headers['user-agent'])
+  let os = ua.getOS().name.toLowerCase().replace(' ', '-')
+  
+  if (!['mac-os', 'windows'].includes(os)) {
+    os = 'other'
+  }
+
+  res.templateVars.os = os
+
   next()
 })
 
@@ -52,6 +65,7 @@ app.get('/en', (req, res) => {
   let vars = {
     lang: 'en',
     ...i18n.en,
+    ...res.templateVars
   }
 
   res.render('index.ejs', vars)
@@ -61,6 +75,7 @@ app.get('/fr', (req, res) => {
   let vars = {
     lang: 'fr',
     ...i18n.fr,
+    ...res.templateVars
   }
 
   res.render('index.ejs', vars)
@@ -75,6 +90,7 @@ app.get('/en/getting-started', (req, res) => {
   let vars = {
     lang: 'en',
     ...i18n.en,
+    ...res.templateVars
   }
 
   res.render('getting-started.ejs', vars)
@@ -84,6 +100,7 @@ app.get('/fr/getting-started', (req, res) => {
   let vars = {
     lang: 'fr',
     ...i18n.fr,
+    ...res.templateVars
   }
 
   res.render('getting-started.ejs', vars)
@@ -98,6 +115,7 @@ app.get('/en/terms-and-conditions', (req, res) => {
   let vars = {
     lang: 'en',
     ...i18n.en,
+    ...res.templateVars
   }
 
   res.render('terms-and-conditions.ejs', vars)
@@ -107,6 +125,7 @@ app.get('/fr/terms-and-conditions', (req, res) => {
   let vars = {
     lang: 'fr',
     ...i18n.fr,
+    ...res.templateVars
   }
 
   res.render('terms-and-conditions.ejs', vars)
@@ -121,6 +140,7 @@ app.get('/en/privacy-policy', (req, res) => {
   let vars = {
     lang: 'en',
     ...i18n.en,
+    ...res.templateVars
   }
 
   res.render('privacy-policy.ejs', vars)
@@ -130,6 +150,7 @@ app.get('/fr/privacy-policy', (req, res) => {
   let vars = {
     lang: 'fr',
     ...i18n.fr,
+    ...res.templateVars
   }
 
   res.render('privacy-policy.ejs', vars)
@@ -144,6 +165,7 @@ app.get('/en/cardinal-server', (req, res) => {
   let vars = {
     lang: 'en',
     ...i18n.en,
+    ...res.templateVars
   }
 
   res.render('cardinal-server.ejs', vars)
@@ -153,6 +175,7 @@ app.get('/fr/cardinal-server', (req, res) => {
   let vars = {
     lang: 'fr',
     ...i18n.fr,
+    ...res.templateVars
   }
 
   res.render('cardinal-server.ejs', vars)
@@ -167,6 +190,7 @@ app.get('/en/cardinal-music', (req, res) => {
   let vars = {
     lang: 'en',
     ...i18n.en,
+    ...res.templateVars
   }
 
   res.render('cardinal-music.ejs', vars)
@@ -176,6 +200,7 @@ app.get('/fr/cardinal-music', (req, res) => {
   let vars = {
     lang: 'fr',
     ...i18n.fr,
+    ...res.templateVars
   }
 
   res.render('cardinal-music.ejs', vars)

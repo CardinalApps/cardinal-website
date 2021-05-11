@@ -7,7 +7,7 @@
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
 
   #downloads .items {
     justify-content: center;
@@ -16,6 +16,27 @@
   #downloads .item {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #app-features {
+
+    .feature {
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+
+      .info {
+        width: 100%;
+      }
+
+      .screenshot {
+        width: 100% !important;
+        position: static;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
 
 }
@@ -119,6 +140,8 @@
   .btn {
     width: 100%;
     margin-bottom: 10px;
+    display: inline-block;
+    text-align: center;
   }
 
   #faq {
@@ -185,7 +208,7 @@
   }
 
   #app-features {
-    padding: 80px 0;
+    padding: 0 0 80px;
 
     .feature {
       

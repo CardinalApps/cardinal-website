@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="<%- lang %>">
+  <head>
+    <%- include('includes/bird.ejs') %>
+    
+    <title><%= cardinal_music_page_title %></title>
+    <meta name="description" content="<%- cardinal_music_page_desc %>">
+    
+    <meta property="og:title" content="<%= cardinal_music_page_title %>">
+    <meta property="og:description" content="<%- cardinal_music_page_desc %>">
+    <meta property="og:url" content="https://cardinalapps.xyz/cardinal-music/<%- lang %>">
+
+    <link rel="canonical" href="https://cardinalapps.xyz/cardinal-music/<%- lang %>">
+
+    <%- include('includes/head.ejs') %>
+  </head>
+  
+  <body data-os="<%- os %>">
+    <%- include('includes/header.ejs') %>
+
+    <section id="single-app-top" class="first landing">
+      <div class="wrap-m">
+        <h1 class="inner"><%- cardinal_music_title %></h1>
+        <h2 class="inner"><%- cardinal_music_subtitle %></h1>
+
+        <div class="buttons">
+          <%- include('includes/buttons/music-macos.ejs') %>
+          <%- include('includes/buttons/music-windows.ejs') %>
+        </div>
+      </div>
+    </section>
+
+    <section id="app-features" class="music">
+      <div class="wrap-m">
+
+        <div class="feature">
+          <div class="info">
+            <h3 class="title"><%- cardinal_music_feature_1_title %></h3>
+            <div class="desc"><%- cardinal_music_feature_1_desc %></div>
+          </div>
+          <div class="screenshot">
+            <a href="/screenshots/music-explore.png" target="_blank">
+              <img src="/screenshots/music-explore.png" alt="Screenshot">
+            </a>
+          </div>
+        </div>
+
+        <div class="feature flip">
+          <div class="info">
+            <h3 class="title"><%- cardinal_music_feature_2_title %></h3>
+            <div class="desc"><%- cardinal_music_feature_2_desc %></div>
+          </div>
+          <div class="screenshot">
+            <a href="/screenshots/music-search.png" target="_blank">
+              <img src="/screenshots/music-search.png" alt="Screenshot">
+            </a>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="info">
+            <h3 class="title"><%- cardinal_music_feature_3_title %></h3>
+            <div class="desc"><%- cardinal_music_feature_3_desc %></div>
+          </div>
+          <div class="screenshot">
+            <a href="/screenshots/music-artist.png" target="_blank">
+              <img src="/screenshots/music-artist.png" alt="Screenshot">
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="more-features">
+      <div class="wrap-s">
+        <h2 class="title"><%- more_app_features %></h2>
+        <ul><%- cardinal_music_extra_features %></ul>
+
+        <div class="back-to-top">
+          <a href="#top" class="btn"><%- download_now %></a>
+        </div>
+      </div>
+    </section>
+    
+    <%- include('includes/footer.ejs') %>
+  </body>
+
+  <%- include('includes/after-body-script.ejs') %>
+</html>

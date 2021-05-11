@@ -11,6 +11,7 @@ module.exports = {
   "app_name_cinema": "Cardinal TV & Movies",
   "app_name_books": "Cardinal Books",
   "download_now": "Download Now",
+  "all_platforms": "See All Platforms",
 
   // SEO
   "home_title": "Cardinal - Free media server and apps for your music, TV & movies, photos, and books",
@@ -159,6 +160,30 @@ module.exports = {
                                      <li>Statistics</li>
                                      <li>Reports</li>
                                      <li>Exportable Database</li>
+                                     <li>And More</li>
+                                    `,
+  
+  // cardinal music
+  "cardinal_music_title": `Cardinal Music`,
+  "cardinal_music_subtitle": `Fully featured music app for playing and browsing your music collection.`,
+  "cardinal_music_feature_1_title": `Personalized Home`,
+  "cardinal_music_feature_1_desc": `<p>Cardinal Music keeps track of what you listen to and makes suggestions at what it thinks you'll like.</p>
+                                     <p>View recently added items, recently played items, most played items, favorite items, and more.</p>
+                                     `,
+  "cardinal_music_feature_2_title": `Music Orientated Features`,
+  "cardinal_music_feature_2_desc": `<p>Use Cardinal Music to keep track of favorite songs, create and manage playlists, search through all of your music, and seek with the song's waveform.</p>
+                                    `,
+  "cardinal_music_feature_3_title": `Easily Browse Your Collection`,
+  "cardinal_music_feature_3_desc": `<p>Browse through artists, albums, tracks, and genres. Browse an artist's discography, cleanly organized for you. See track metadata, set artist pictures, and enjoy a crisp music experience.</p>
+                                    `,
+  "cardinal_music_extra_features": `<li>Themes</li>
+                                     <li>Favorites</li>
+                                     <li>Multiple Languages</li>
+                                     <li>Smart Shuffle</li>
+                                     <li>Waveforms</li>
+                                     <li>Playback History</li>
+                                     <li>Plugins</li>
+                                     <li>Notifications</li>
                                      <li>And More</li>
                                     `,
   
