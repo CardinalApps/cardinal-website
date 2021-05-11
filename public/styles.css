@@ -271,7 +271,7 @@ footer .attributions a:hover { text-decoration: none; }
 
 @media screen and (max-width: 768px) { #hamburger { display: block; }
   #logo img { height: 28px; }
-  h1 { font-size: 32px; }
+  h1 { font-size: 30px; }
   h2, h2.inner { font-size: 20px; }
   h3 { font-size: 24px; padding-left: 0; }
   header#site-header { padding: 0; }
@@ -286,7 +286,7 @@ footer .attributions a:hover { text-decoration: none; }
   nav.pages .dropdown li { margin-bottom: 5px; }
   .landing { margin-bottom: 70px; }
   .landing h2 { max-width: none; }
-  .landing-desc p { font-size: 14px; }
+  .landing-desc p { font-size: 16px; max-width: 100%; }
   #downloads .item { width: 100%; }
   .btn { width: 100%; margin-bottom: 10px; }
   #faq { margin-bottom: 20px; }
