@@ -53,6 +53,17 @@
     }
   })
 
+  // click to show mobile menu
+  let ham = document.querySelector('#hamburger')
+  ham.addEventListener('click', (event) => {
+    console.log('a')
+    if (document.body.classList.contains('mobile-menu-open')) {
+      document.body.classList.remove('mobile-menu-open')
+    } else {
+      document.body.classList.add('mobile-menu-open')
+    }
+  })
+
   // maybe set the color theme from the cookie
   let cookieValue = document.cookie.split('; ').find(row => row.startsWith('colortheme'))
 

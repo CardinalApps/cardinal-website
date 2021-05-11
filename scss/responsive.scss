@@ -1,3 +1,12 @@
+@media screen and (max-width: 1200px) {
+
+  #downloads .item {
+    width: calc(50% - 20px);
+    max-width: 375px;
+  }
+
+}
+
 @media screen and (max-width: 900px) {
 
   #downloads .items {
@@ -13,12 +22,12 @@
 
 @media screen and (max-width: 768px) {
 
-  #logo img {
-    height: 28px;
+  #hamburger {
+    display: block;
   }
 
-  .first {
-    padding-top: 110px;
+  #logo img {
+    height: 28px;
   }
 
   h1 {
@@ -42,12 +51,59 @@
     padding: 0 12px;
   }
 
+  nav.pages {
+    width: 100%;
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 100ms;
+
+    ul {
+      padding: 0 30px;
+      width: 100%;
+      flex-wrap: wrap;
+
+      li {
+        width: 100%;
+        margin-bottom: 20px;
+
+        .top-level-item {
+          font-size: 26px;
+          margin-bottom: 10px;
+
+          &:after {
+            display: none;
+          }
+        }
+
+        .second-level-item {
+          background: var(--bg);
+        }
+      }
+    }
+
+    .dropdown {
+      padding: 20px;
+      display: block !important;
+      position: static;
+    }
+  }
+
   .landing {
     margin-bottom: 70px;
   }
 
   .landing h2 {
     max-width: none;
+  }
+
+  .landing-desc p {
+    font-size: 14px;
   }
 
   #downloads .item {
@@ -84,7 +140,7 @@
     padding: 15px;
     margin-left: 0 !important;
     position: absolute;
-    top: 72px;
+    top: 48px;
     left: 0;
     right: 0;
     transition: none;
@@ -100,7 +156,7 @@
   }
 
   .core-value {
-    width: 100%;
+    width: 100% !important;
   }
 
 }

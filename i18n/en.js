@@ -18,7 +18,7 @@ module.exports = {
   "getting_started_desc": "Learn how to quickly get started with the Cardinal ecosystem.",
 
   // lang switcher
-  "current_lang_prefix": "Lang - ",
+  "current_lang_prefix": "",
 
   // nav
   "menu_getting_started": "Getting Started",
