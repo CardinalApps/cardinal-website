@@ -188,6 +188,10 @@ svg path { fill: var(--text-color); }
 
 #downloads .meta .description { margin-bottom: 20px; font: 14px/1.6em var(--base-font); }
 
+#downloads .btn.darwin { display: none; }
+
+#downloads .btn.win32 { display: none; }
+
 .subtitle-notices { padding-left: 30px; position: relative; top: -15px; }
 
 #downloads .platforms { position: absolute; left: 20px; right: 20px; bottom: 20px; }
@@ -195,10 +199,6 @@ svg path { fill: var(--text-color); }
 .btn { padding: 11px 17px; margin: 0 10px 0 0; color: var(--text-color-2); border-radius: 4px; cursor: pointer; font: 14px var(--base-font); background: var(--btn-color); display: inline-flex; align-items: center; user-select: none; transition: all 150ms; }
 
 .btn:hover { text-decoration: none !important; background-color: var(--btn-color-hover); }
-
-.btn.darwin { display: none; }
-
-.btn.win32 { display: none; }
 
 .btn svg { width: 21px; margin-right: 11px; fill: var(--text-color); }
 
@@ -326,7 +326,7 @@ footer .attributions a:hover { text-decoration: none; }
   h3 { font-size: 24px; padding-left: 0; }
   header#site-header { padding: 0; }
   header.site-header .wrap-xl { padding: 0 12px; }
-  nav.pages { width: 100%; position: fixed; top: var(--header-height); left: 0; right: 0; bottom: 0; background-color: var(--bg); opacity: 0; pointer-events: none; transition: opacity 100ms; }
+  nav.pages { width: 100%; padding-top: 60px; position: fixed; top: var(--header-height); left: 0; right: 0; bottom: 0; background-color: var(--bg); opacity: 0; align-items: flex-start; pointer-events: none; transition: opacity 100ms; }
   nav.pages ul { padding: 0 30px; width: 100%; flex-wrap: wrap; }
   nav.pages ul li { width: 100%; margin-bottom: 20px; }
   nav.pages ul li .top-level-item { font-size: 26px; margin-bottom: 10px; }
@@ -338,7 +338,7 @@ footer .attributions a:hover { text-decoration: none; }
   .landing h2 { max-width: none; }
   .landing-desc p { font-size: 16px; max-width: 100%; }
   #downloads .item { width: 100%; }
-  .btn { width: 100%; margin-bottom: 10px; display: inline-block; text-align: center; }
+  .btn { width: 100%; margin-bottom: 10px; display: inline-flex; justify-content: center; text-align: center; }
   #faq { margin-bottom: 20px; }
   footer { flex-wrap: wrap; }
   footer > div { margin-bottom: 5px; }

@@ -74,6 +74,7 @@
 
   nav.pages {
     width: 100%;
+    padding-top: 60px;
     position: fixed;
     top: var(--header-height);
     left: 0;
@@ -81,6 +82,7 @@
     bottom: 0;
     background-color: var(--bg);
     opacity: 0;
+    align-items: flex-start;
     pointer-events: none;
     transition: opacity 100ms;
 
@@ -140,7 +142,8 @@
   .btn {
     width: 100%;
     margin-bottom: 10px;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
     text-align: center;
   }
 

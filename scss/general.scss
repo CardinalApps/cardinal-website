@@ -544,6 +544,14 @@ svg path {
       font: 14px/1.6em var(--base-font);
     }
   }
+
+  .btn.darwin {
+    display: none;
+  }
+
+  .btn.win32 {
+    display: none;
+  }
 }
 
 .subtitle-notices {
@@ -575,14 +583,6 @@ svg path {
   &:hover {
     text-decoration: none !important;
     background-color: var(--btn-color-hover);
-  }
-
-  &.darwin {
-    display: none;
-  }
-
-  &.win32 {
-    display: none;
   }
 
   svg {
