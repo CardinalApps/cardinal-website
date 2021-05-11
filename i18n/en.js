@@ -109,8 +109,8 @@ module.exports = {
   "all_apps_features_privacy_desc": `<p>Cardinal apps don't collect any data whatsoever and never phone home. Privacy is non-negotiable when it comes to your personal files.</p>`,
   "all_apps_features_adfree_title": "No Ads, No Marketing",
   "all_apps_features_adfree_desc": `<p>Ads ruin everything. Cardinal apps will never run ads of any kind, and will never try to pull any stealthy marketing shenanigans.</p>`,
-  "all_apps_features_noforce_title": "No Forced Updates",
-  "all_apps_features_noforce_desc": `<p>Nine out of ten dentists agree that it's annoying when you launch software and it immediatly forces you to update. Take your time to update, or disable updates altogether if that's your thing.</p>`,
+  "all_apps_features_honest_title": "Honest and Dependable",
+  "all_apps_features_honest_desc": `<p>Ten out of ten dentists agree that they don't want crypto miners in their software. You can depend on Cardinal apps to always be honest and good&nbsp;willed.</p>`,
   "all_apps_features_offline_title": "Offline First",
   "all_apps_features_offline_desc": `<p>Cardinal apps use your file metadata first and foremost, and don't rely on an internet connection for basic functionality. Your media will always be accessible, even during the next apocalypse.</p>`,
   

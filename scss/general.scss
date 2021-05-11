@@ -4,6 +4,7 @@ html, body {
 }
 
 body.mobile-menu-open {
+  overflow: hidden;
 
   nav.pages {
     opacity: 1;
