@@ -271,8 +271,8 @@ footer .attributions a:hover { text-decoration: none; }
 
 @media screen and (max-width: 768px) { #hamburger { display: block; }
   #logo img { height: 28px; }
-  h1 { font-size: 28px; }
-  h2 { font-size: 20px; }
+  h1 { font-size: 32px; }
+  h2, h2.inner { font-size: 20px; }
   h3 { font-size: 24px; padding-left: 0; }
   header#site-header { padding: 0; }
   header.site-header .wrap-xl { padding: 0 12px; }
@@ -283,6 +283,7 @@ footer .attributions a:hover { text-decoration: none; }
   nav.pages ul li .top-level-item:after { display: none; }
   nav.pages ul li .second-level-item { background: var(--bg); }
   nav.pages .dropdown { padding: 20px; display: block !important; position: static; }
+  nav.pages .dropdown li { margin-bottom: 5px; }
   .landing { margin-bottom: 70px; }
   .landing h2 { max-width: none; }
   .landing-desc p { font-size: 14px; }
@@ -296,7 +297,11 @@ footer .attributions a:hover { text-decoration: none; }
   .lang-switcher .all-langs { width: 100%; padding: 15px; margin-left: 0 !important; position: absolute; top: 48px; left: 0; right: 0; transition: none; background-color: var(--bg); }
   .subtitle-notices, .notices { padding-left: 0; }
   .core-value-list { flex-wrap: wrap; }
-  .core-value { width: 100% !important; } }
+  .core-value { width: 100% !important; }
+  #getting-started-steps { padding: 80px 0; }
+  #getting-started-steps .step { padding: 60 30p 30px 30px; }
+  #getting-started-steps .step .step-title { font-size: 22px; }
+  #getting-started-steps .step .step-desc p { font-size: 14px; } }
 
 :root { --accent: rgb(234, 103, 103); --base-font: 'Open sans', sans-serif; --accent-font: 'Yantramanav', sans-serif; --header-height: 72px; }
 

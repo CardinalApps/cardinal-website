@@ -31,10 +31,10 @@
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 32px;
   }
 
-  h2 {
+  h2, h2.inner {
     font-size: 20px;
   }
 
@@ -91,6 +91,10 @@
       padding: 20px;
       display: block !important;
       position: static;
+
+      li {
+        margin-bottom: 5px;
+      }
     }
   }
 
@@ -157,6 +161,25 @@
 
   .core-value {
     width: 100% !important;
+  }
+
+  #getting-started-steps {
+    padding: 80px 0;
+
+    .step {
+      padding: 60 30p 30px 30px;
+
+      .step-title {
+        font-size: 22px;
+      }
+
+      .step-desc {
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
   }
 
 }
