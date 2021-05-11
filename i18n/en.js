@@ -8,14 +8,19 @@ module.exports = {
   "app_name_server": "Cardinal Server",
   "app_name_music": "Cardinal Music",
   "app_name_photos": "Cardinal Photos",
-  "app_name_cinema": "Cardinal Cinema",
+  "app_name_cinema": "Cardinal TV & Movies",
   "app_name_books": "Cardinal Books",
+  "download_now": "Download Now",
 
   // SEO
   "home_title": "Cardinal - Free media server and apps for your music, TV & movies, photos, and books",
   "home_meta_desc": "Listen to your music, watch your TV & movies, back up your photos, and do everything else that a modern media server does.",
   "getting_started_title": "Cardinal - Getting Started",
   "getting_started_desc": "Learn how to quickly get started with the Cardinal ecosystem.",
+  "cardinal_server_page_title": "Cardinal Server",
+  "cardinal_server_page_desc": "Index your music, TV & movies, photos, and books all in one app.",
+  "cardinal_music_page_title": "Cardinal Music",
+  "cardinal_music_page_desc": "Listen to and curate your music on desktop and mobile with Cardinal Music.",
 
   // lang switcher
   "current_lang_prefix": "",
@@ -105,6 +110,7 @@ module.exports = {
 
   // features
   "all_apps_features_title": "Cardinal Core Values",
+  "more_app_features": "And Plenty More",
   "all_apps_features_privacy_title": "Zero Data Collection",
   "all_apps_features_privacy_desc": `<p>Cardinal apps don't collect any data whatsoever and never phone home. Privacy is non-negotiable when it comes to your personal files.</p>`,
   "all_apps_features_adfree_title": "No Ads, No Marketing",
@@ -130,6 +136,31 @@ module.exports = {
   "getting_started_step_3_desc": `<p>All of the media that your server indexes is available to you thorugh the other Cardinal apps on the same network. Each app is designed specifically for that kind of media.</p>
                                   <p>The first time you open another Cardinal app, it will ask you for the address of your server. That's all you need to connect!</p>
                                   `,
+
+  // cardinal server
+  "cardinal_server_title": `Cardinal Server`,
+  "cardinal_server_subtitle": `Make your media available to all other Cardinal apps.`,
+  "cardinal_server_feature_1_title": `Your Central Media Hub`,
+  "cardinal_server_feature_1_desc": `<p>Cardinal Server acts as the brains for all other Cardinal apps, and provides features for managing your devices.</p>
+                                     <p>No matter where your media files are located, they'll be reliably available to other Cardinal apps on the same network.</p>
+                                     `,
+  "cardinal_server_feature_2_title": `Index Everything`,
+  "cardinal_server_feature_2_desc": `<p>Cardinal Server can read your music files, TV & movie files, images, and digital book files. Just let the server know where to find your stuff and let it do the rest.</p>
+                                     <p>The first indexing run might take a little while, but every subsequent one is much faster.</p>
+                                     <p><em>Server development is still underway. Currently only music functionality is available.</em></p>
+                                    `,
+  "cardinal_server_feature_3_title": `Monitor Connected Apps`,
+  "cardinal_server_feature_3_desc": `<p>Cardinal Server lets you see what all connected Cardinal apps are doing. Whether it's the Photos app performing a regular backup, or the Music app playing in the other room, you can monitor it and control it.</p>
+                                    `,
+  "cardinal_server_extra_features": `<li>Themes</li>
+                                     <li>Multiple Languages</li>
+                                     <li>Alerts</li>
+                                     <li>Plugins</li>
+                                     <li>Statistics</li>
+                                     <li>Reports</li>
+                                     <li>Exportable Database</li>
+                                     <li>And More</li>
+                                    `,
   
   // social
   "social_title": `Get Involved`,

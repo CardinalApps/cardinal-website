@@ -16,6 +16,8 @@ img { max-width: 100%; }
 
 html, body { font: 400 14px/1.6em var(--base-font); background-color: var(--bg); }
 
+body.mobile-menu-open { overflow: hidden; }
+
 body.mobile-menu-open nav.pages { opacity: 1; pointer-events: all; }
 
 a[href], a[href]:link, a[href]:visited { color: var(--text-color); text-decoration: none; }
@@ -96,11 +98,11 @@ nav.pages li { height: auto; padding-right: 0; margin-right: 20px; }
 
 .has-dropdown .top-level-item:after { content: ''; width: 0; height: 0; position: absolute; top: 50%; right: -15px; border-radius: 100%; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid var(--accent); }
 
-.dropdown { width: 200px; padding: 10px; border-radius: 8px; position: absolute; top: 100%; left: -70px; display: none !important; background-color: var(--bg-4); }
+.dropdown { width: 220px; padding: 10px; border-radius: 8px; position: absolute; top: 100%; left: -70px; display: none !important; background-color: var(--bg-4); }
 
-.dropdown li { height: auto; padding-right: 0; margin-bottom: 5px; }
+.dropdown li { height: auto; padding-right: 0 !important; margin-bottom: 5px; margin-right: 0 !important; }
 
-.dropdown li:last-of-type { margin-bottom: 0; }
+.dropdown li:last-of-type { margin-bottom: 0 !important; }
 
 .dropdown li a { width: 100%; padding: 5px; border-radius: 6px; display: flex; align-items: center; font: 500 14px var(--base-font); transition: background-color 200ms; }
 
@@ -264,6 +266,34 @@ footer .attributions a:hover { text-decoration: none; }
 
 #getting-started-steps .step .buttons { padding-top: 30px; }
 
+#app-features { padding: 90px 0 180px; }
+
+#app-features .feature { margin-bottom: 260px; display: flex; position: relative; border-radius: 20px; background: var(--bg-2); }
+
+#app-features .feature:last-of-type { margin-bottom: 0; }
+
+#app-features .feature.flip { justify-content: flex-end; }
+
+#app-features .feature.flip .screenshot { right: auto; left: 0; }
+
+#app-features .feature .title { padding-left: 0; color: var(--accent); }
+
+#app-features .feature .screenshot { width: 432px; position: absolute; top: -170px; right: 0; background-size: cover; background-position: center center; }
+
+#app-features .feature .info { max-width: 520px; padding: 60px; }
+
+#app-features .feature .info .desc p:last-of-type { margin-bottom: 0; }
+
+#more-features { padding: 60px 0; background: var(--bg-2); }
+
+#more-features .title { margin-bottom: 40px; text-align: center; font-weight: 600; }
+
+#more-features ul { display: flex; flex-wrap: wrap; justify-content: center; }
+
+#more-features ul li { padding: 9px 12px; margin: 8px; border-radius: 6px; font: 600 16px var(--base-font); color: var(--accent); background: var(--bg-4); }
+
+#more-features .back-to-top { padding-top: 40px; text-align: center; }
+
 @media screen and (max-width: 1200px) { #downloads .item { width: calc(50% - 20px); max-width: 375px; } }
 
 @media screen and (max-width: 900px) { #downloads .items { justify-content: center; }
@@ -301,7 +331,8 @@ footer .attributions a:hover { text-decoration: none; }
   #getting-started-steps { padding: 80px 0; }
   #getting-started-steps .step { padding: 60 30p 30px 30px; }
   #getting-started-steps .step .step-title { font-size: 22px; }
-  #getting-started-steps .step .step-desc p { font-size: 14px; } }
+  #getting-started-steps .step .step-desc p { font-size: 14px; }
+  #app-features { padding: 80px 0; } }
 
 :root { --accent: rgb(234, 103, 103); --base-font: 'Open sans', sans-serif; --accent-font: 'Yantramanav', sans-serif; --header-height: 72px; }
 
