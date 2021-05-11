@@ -35,7 +35,7 @@ module.exports = {
   "download_agreement": `By downloading Cardinal, you agree to the <a href="/en/terms-and-conditions">Terms & Conditions</a> and <a href="/en/privacy-policy">Privacy Policy</a>.`,
   
   // downloads
-  "downloads_box_title": "Downloads",
+  "downloads_box_title": "Applications",
   "early_access_notice": `Cardinal is early access software. Follow the progress <a href="https://old.reddit.com/r/cardinalapps" target="_blank">here</a>.`,
   "in_development": "In Development",
   "development_planned": "Planned",

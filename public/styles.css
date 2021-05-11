@@ -284,7 +284,7 @@ footer .attributions a:hover { text-decoration: none; }
   nav.pages ul li .second-level-item { background: var(--bg); }
   nav.pages .dropdown { padding: 20px; display: block !important; position: static; }
   nav.pages .dropdown li { margin-bottom: 5px; }
-  .landing { margin-bottom: 70px; }
+  .landing { padding: 140px 0 70px; margin-bottom: 70px; }
   .landing h2 { max-width: none; }
   .landing-desc p { font-size: 16px; max-width: 100%; }
   #downloads .item { width: 100%; }
