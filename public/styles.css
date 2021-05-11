@@ -152,7 +152,7 @@ svg path { fill: var(--text-color); }
 
 .landing-desc p { max-width: 64%; margin: 0 auto 10px; font: 600 18px/1.6em var(--base-font); color: var(--text-color-2); text-align: center; }
 
-.emojis { padding-top: 10px; letter-spacing: 1em; cursor: default; }
+.emojis { padding-top: 10px; cursor: default; }
 
 .early-access { margin-bottom: 10px; font: 12px var(--base-font); color: var(--text-color-3); }
 
