@@ -571,6 +571,7 @@ svg path {
   margin: 0 10px 0 0;
   color: var(--text-color-2);
   border-radius: 4px;
+  white-space: nowrap;
   cursor: pointer;
   font: 14px var(--base-font);
   background: var(--btn-color);

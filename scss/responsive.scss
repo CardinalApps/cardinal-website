@@ -74,7 +74,7 @@
 
   nav.pages {
     width: 100%;
-    padding-top: 60px;
+    padding-top: 20px;
     position: fixed;
     top: var(--header-height);
     left: 0;
@@ -93,7 +93,9 @@
 
       li {
         width: 100%;
-        margin-bottom: 20px;
+        height: auto;
+        margin-bottom: 0;
+        margin-right: 0;
 
         .top-level-item {
           font-size: 26px;
@@ -192,7 +194,7 @@
   }
 
   #getting-started-steps {
-    padding: 80px 0;
+    padding: 40px 0 0;
 
     .step {
       padding: 60 30p 30px 30px;
@@ -215,6 +217,9 @@
 
     .feature {
       
+      .info {
+        padding: 30px;
+      }
     }
   }
 
