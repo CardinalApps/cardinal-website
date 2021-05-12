@@ -16,8 +16,8 @@ module.exports = {
   // SEO
   "home_title": "Cardinal - Free media server and apps for your music, TV & movies, photos, and books",
   "home_meta_desc": "Listen to your music, watch your TV & movies, back up your photos, and do everything else that a modern media server does.",
-  "getting_started_title": "Cardinal - Getting Started",
-  "getting_started_desc": "Learn how to quickly get started with the Cardinal ecosystem.",
+  "getting_started_page_title": "Cardinal - Getting Started",
+  "getting_started_page_desc": "Learn how to quickly get started with the Cardinal ecosystem.",
   "cardinal_server_page_title": "Cardinal Server",
   "cardinal_server_page_desc": "Index your music, TV & movies, photos, and books all in one app.",
   "cardinal_music_page_title": "Cardinal Music",
@@ -123,20 +123,21 @@ module.exports = {
   
   // getting started
   "getting_started_title": `Getting Started is Easy`,
-  "getting_started_subtitle": `Cardinal doesn't require an account or anything like that, and getting set up with the ecosystem is super straightforward.`,
+  "getting_started_subtitle": `Cardinal doesn't require an account or anything like that, and getting set up with the ecosystem is super straightforward. Just bring your own media files.`,
   "getting_started_step_1_title": `Install the server`,
   "getting_started_step_1_desc": `<p>No matter which Cardinal apps you want to use, the server needs to be installed first. Installers are available for macOS and Windows. Linux support is planned.</p>
-                                  <p>Once it's installed, start it up.</p>
+                                  <p>Once it's installed, start the server up.</p>
                                   `,
   "getting_started_step_2_title": `Index your media files`,
-  "getting_started_step_2_desc": `<p>All the server needs to know is where your media files are. Drag-n-drop the folder(s) into Cardinal Server and press the big button to start the indexing process.</p>
+  "getting_started_step_2_desc": `<p>All the server needs to know is where your media files are located. <span class="nbsp">Drag-n-drop</span> the folder(s) into Cardinal Server and press the big button to start the indexing process.</p>
                                   <p>You don't need to wait until this is done - you can go to step 3 now.</p>
                                   <p>But once it's done, make sure to leave Cardinal Server running in the background; the other Cardinal apps need it.</p>
                                   `,
   "getting_started_step_3_title": `Use other Cardinal apps`,
-  "getting_started_step_3_desc": `<p>All of the media that your server indexes is available to you thorugh the other Cardinal apps on the same network. Each app is designed specifically for that kind of media.</p>
+  "getting_started_step_3_desc": `<p>All of the media that your server indexes is available to you through the other Cardinal apps on the same network. Each app is designed specifically for that kind of media.</p>
                                   <p>The first time you open another Cardinal app, it will ask you for the address of your server. That's all you need to connect!</p>
                                   `,
+  "getting_started_general_help": `<p>Cardinal is early access software. If you run into issues, consider leaving feedback on <a href="https://github.com/somebeaver/Cardinal-Feedback" target="_blank" rel="nofollow">GitHub</a>.</p>`,
 
   // cardinal server
   "cardinal_server_title": `Cardinal Server`,

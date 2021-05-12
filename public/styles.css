@@ -58,6 +58,8 @@ em { font-style: italic; }
 
 a p { cursor: pointer; }
 
+.nbsp { white-space: nowrap; }
+
 .wrap-xl { width: 100%; max-width: 1350px; padding: 0 30px; margin: 0 auto; }
 
 .wrap-l { width: 100%; max-width: 1200px; padding: 0 30px; margin: 0 auto; }
@@ -202,6 +204,10 @@ svg path { fill: var(--text-color); }
 
 .btn svg { width: 21px; margin-right: 11px; fill: var(--text-color); }
 
+.btn i { font-size: 26px; margin-right: 11px; color: var(--text-color); }
+
+.btn i.fa-apple { position: relative; top: -1px; }
+
 .btn sup { position: relative; top: -2px; font-size: 11px; }
 
 .btn sup .beta { margin-left: 4px; }
@@ -262,21 +268,29 @@ footer .attributions a:hover { text-decoration: none; }
 
 #getting-started-top { background-color: var(--bg-2); }
 
-#getting-started-steps { padding: 140px 0; }
+#getting-started-steps { padding: 140px 0 80px; }
 
 #getting-started-steps .step { margin-bottom: 100px; padding: 60px 50px 50px 50px; border-radius: 12px; position: relative; background-color: var(--bg-2); }
+
+#getting-started-steps .step:last-of-type { margin-bottom: 0; }
 
 #getting-started-steps .step .num { width: 80px; height: 80px; margin-left: -40px; border-radius: 100%; position: absolute; font: 700 34px var(--base-font); color: white; display: flex; align-items: center; justify-content: center; top: -40px; left: 50%; border: 8px solid var(--bg); background-color: var(--accent); }
 
 #getting-started-steps .step .step-title { font-size: 28px; padding-left: 0; }
 
-#getting-started-steps .step .step-desc p { font-size: 16px; margin-bottom: 10px; }
+#getting-started-steps .step .step-desc p { font-size: 16px; }
 
 #getting-started-steps .step .step-desc p:last-of-type { margin-bottom: 0; }
 
 #getting-started-steps .step .buttons { padding-top: 30px; }
 
 #getting-started-steps .step .buttons .btn { display: inline-flex !important; }
+
+#getting-started-disclaimer { padding: 40px 0 80px; }
+
+#getting-started-disclaimer p { text-align: center; }
+
+#getting-started-disclaimer p a { color: var(--accent); }
 
 #app-features { padding: 90px 0 180px; }
 

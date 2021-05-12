@@ -125,6 +125,10 @@ a p {
   cursor: pointer;
 }
 
+.nbsp {
+  white-space: nowrap;
+}
+
 .wrap-xl {
   width: 100%;
   max-width: 1350px;
@@ -591,6 +595,18 @@ svg path {
     fill: var(--text-color);
   }
 
+  i {
+    font-size: 26px;
+    margin-right: 11px;
+    color: var(--text-color);
+
+    // align the bite
+    &.fa-apple {
+      position: relative;
+      top: -1px;
+    }
+  }
+
   sup {
     position: relative;
     top: -2px;
@@ -763,7 +779,7 @@ footer {
 }
 
 #getting-started-steps {
-  padding: 140px 0;
+  padding: 140px 0 80px;
 
   .step {
     margin-bottom: 100px;
@@ -771,6 +787,10 @@ footer {
     border-radius: 12px;
     position: relative;
     background-color: var(--bg-2);
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
 
     .num {
       width: 80px;
@@ -798,7 +818,6 @@ footer {
 
       p {
         font-size: 16px;
-        margin-bottom: 10px;
 
         &:last-of-type {
           margin-bottom: 0;
@@ -812,6 +831,18 @@ footer {
       .btn {
         display: inline-flex !important;
       }
+    }
+  }
+}
+
+#getting-started-disclaimer {
+  padding: 40px 0 80px;
+
+  p {
+    text-align: center;
+
+    a {
+      color: var(--accent);
     }
   }
 }
