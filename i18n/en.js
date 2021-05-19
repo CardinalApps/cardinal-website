@@ -37,7 +37,7 @@ module.exports = {
                         <p>Just show the server where your files are, and enjoy your music, TV & movies, photos, and books on all your smart devices.</p>
                         <p class="emojis">🎧&nbsp;&nbsp;🍿&nbsp;&nbsp;🌉&nbsp;&nbsp;📚</p>`,
   "download_mac": "Download for macOS<sup>®</sup>",
-  "download_win": `Download for Windows<sup>®</sup> <sup class="beta">(beta)</sup>`,
+  "download_win": `Download for Windows<sup>®</sup>`,
   "download_agreement": `By downloading Cardinal, you agree to the <a href="/en/terms-and-conditions">Terms & Conditions</a> and <a href="/en/privacy-policy">Privacy Policy</a>.`,
   
   // downloads
