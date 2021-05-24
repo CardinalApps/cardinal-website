@@ -412,7 +412,7 @@ svg path {
 
 .landing {
   padding: 190px 0 120px;
-  background-color: var(--bg-2);
+  background: linear-gradient(123deg, var(--bg-2), var(--bg-3))
 }
 
 .landing-desc p {
@@ -554,6 +554,90 @@ svg path {
 
   .btn.win32 {
     display: none;
+  }
+}
+
+#global-features {
+  padding: 170px 0;
+  background-color: var(--bg-2);
+
+  h3 {
+    padding-left: 0;
+  }
+
+  h5 {
+    color: var(--text-color);
+  }
+
+  .desc {
+
+    p {
+      font-size: 17px;
+    }
+  }
+
+  .feature {
+    margin-bottom: 170px;
+    display: flex;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &:nth-of-type(even) {
+
+      .icon { order: 1; }
+      .text { 
+        order: 2;
+      }
+    }
+
+    .text {
+      width: 60%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+
+      h3 {
+        width: 100%;
+      }
+
+      p {
+        margin-bottom: 20px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+
+        a {
+          color: var(--accent);
+        }
+      }
+    }
+
+    .icon {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .box {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 42px;
+        background: var(--bg);
+      }
+
+      i {
+        font-size: 74px;
+        color: var(--accent);
+      }
+    }
   }
 }
 

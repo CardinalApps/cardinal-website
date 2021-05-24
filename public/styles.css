@@ -150,7 +150,7 @@ svg path { fill: var(--text-color); }
 
 .home-section { margin-bottom: 100px; }
 
-.landing { padding: 190px 0 120px; background-color: var(--bg-2); }
+.landing { padding: 190px 0 120px; background: linear-gradient(123deg, var(--bg-2), var(--bg-3)); }
 
 .landing-desc p { max-width: 64%; margin: 0 auto 10px; font: 600 18px/1.6em var(--base-font); color: var(--text-color-2); text-align: center; }
 
@@ -193,6 +193,38 @@ svg path { fill: var(--text-color); }
 #downloads .btn.darwin { display: none; }
 
 #downloads .btn.win32 { display: none; }
+
+#global-features { padding: 170px 0; background-color: var(--bg-2); }
+
+#global-features h3 { padding-left: 0; }
+
+#global-features h5 { color: var(--text-color); }
+
+#global-features .desc p { font-size: 17px; }
+
+#global-features .feature { margin-bottom: 170px; display: flex; }
+
+#global-features .feature:last-of-type { margin-bottom: 0; }
+
+#global-features .feature:nth-of-type(even) .icon { order: 1; }
+
+#global-features .feature:nth-of-type(even) .text { order: 2; }
+
+#global-features .feature .text { width: 60%; display: flex; flex-wrap: wrap; align-items: center; align-content: center; }
+
+#global-features .feature .text h3 { width: 100%; }
+
+#global-features .feature .text p { margin-bottom: 20px; }
+
+#global-features .feature .text p:last-of-type { margin-bottom: 0; }
+
+#global-features .feature .text p a { color: var(--accent); }
+
+#global-features .feature .icon { width: 40%; display: flex; align-items: center; justify-content: center; }
+
+#global-features .feature .icon .box { width: 200px; height: 200px; position: relative; display: flex; align-items: center; justify-content: center; border-radius: 42px; background: var(--bg); }
+
+#global-features .feature .icon i { font-size: 74px; color: var(--accent); }
 
 .subtitle-notices { padding-left: 30px; position: relative; top: -15px; }
 

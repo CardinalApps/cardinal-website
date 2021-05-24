@@ -42,7 +42,7 @@ module.exports = {
   
   // downloads
   "downloads_box_title": "Applications",
-  "early_access_notice": `Cardinal is early access software. Follow the progress <a href="https://old.reddit.com/r/cardinalapps" target="_blank">here</a>.`,
+  "early_access_notice": `Cardinal is early access software. Follow the progress <a href="https://github.com/somebeaver" target="_blank">on GitHub</a>.`,
   "in_development": "In Development",
   "development_planned": "Planned",
 
@@ -109,7 +109,18 @@ module.exports = {
                               <li>Transfer files to your devices for offline use</li>
                               `,
 
-  // features
+  // global features                             
+  "global_features_curators_title": "Designed for Collectors",
+  "global_features_curators_desc": "<p>Cardinal apps serve curators and archivists the best. The people who choose to maintain their own collections for whatever reason. Cardinal is for you - because it's a labour of love in this era of on-demand everything.</p>",
+  "global_features_custom_title": "Complete Customizability",
+  "global_features_custom_desc": "<p>All Cardinal apps are written 100% in JavaScript and are ready for whatever customizations you have in mind. Custom CSS can be added straight from the settings panel, and creating JavaScript plugins can be done directly in the included developer tools.</p>",
+  "global_features_oneserver_title": "One Server to Rule Them All",
+  "global_features_oneserver_desc": "<p>It's pretty convenient only needing one app to index all of your media files. Cardinal Server handles the nitty gritty metadata details, and leaves the presentation to dedicated Cardinal apps.</p>",
+  "global_features_platformless_title": "All About the Web",
+  "global_features_platformless_desc": `<p>Cardinal embraces the web and tries to stay as platformless as possible. Mobile Cardinal apps are designed as PWA's first, reaching more platforms and devices quicker.</p>
+                                        <p><a href='https://github.com/somebeaver/Cardinal-Project#development-philosophy' target="_blank">Read the development philosophy.</a></p>`,
+
+  // core values
   "all_apps_features_title": "Cardinal Core Values",
   "more_app_features": "And Plenty More",
   "all_apps_features_privacy_title": "Zero Data Collection",
@@ -119,7 +130,7 @@ module.exports = {
   "all_apps_features_honest_title": "Honest and Dependable",
   "all_apps_features_honest_desc": `<p>Ten out of ten dentists agree that they don't want crypto miners in their software. You can depend on Cardinal apps to always be honest and good&nbsp;willed.</p>`,
   "all_apps_features_offline_title": "Offline First",
-  "all_apps_features_offline_desc": `<p>Cardinal apps use your file metadata first and foremost, and don't rely on an internet connection for basic functionality. Your media will always be accessible, even during the next apocalypse.</p>`,
+  "all_apps_features_offline_desc": `<p>Cardinal apps use your file metadata first and foremost, and don't rely on an internet connection for functionality. And with no forced authentication, your media will always be accessible, even during the next outage.</p>`,
   
   // getting started
   "getting_started_title": `Getting Started is Easy`,
