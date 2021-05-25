@@ -129,6 +129,17 @@ a p {
   white-space: nowrap;
 }
 
+section.s {
+  padding-top: var(--fat);
+  padding-bottom: var(--fat);
+
+  .s-title {
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 32px;
+  }
+}
+
 .wrap-xl {
   width: 100%;
   max-width: 1350px;
@@ -251,8 +262,7 @@ nav.pages {
 
   li {
     height: auto;
-    padding-right: 0;
-    margin-right: 20px;
+    padding-right: 20px;
   }
 } 
 
@@ -406,11 +416,7 @@ svg path {
   fill: var(--text-color);
 }
 
-.home-section {
-  margin-bottom: 100px;
-}
-
-.landing {
+#landing {
   padding: 190px 0 120px;
   background: linear-gradient(123deg, var(--bg-2), var(--bg-3))
 }
@@ -435,6 +441,7 @@ svg path {
 }
 
 #downloads {
+  overflow: hidden;
   
   .notices {
     padding-left: 30px;
@@ -558,7 +565,7 @@ svg path {
 }
 
 #global-features {
-  padding: 170px 0;
+  padding-bottom: 170px;
   background-color: var(--bg-2);
 
   h3 {
@@ -572,7 +579,7 @@ svg path {
   .desc {
 
     p {
-      font-size: 17px;
+      font-size: 16px;
     }
   }
 
@@ -858,10 +865,6 @@ footer {
   }
 }
 
-#getting-started-top {
-  background-color: var(--bg-2);
-}
-
 #getting-started-steps {
   padding: 140px 0 80px;
 
@@ -932,45 +935,46 @@ footer {
 }
 
 #app-features {
-  padding: 90px 0 180px;
 
   &.music {
 
     .feature {
+      margin-bottom: 130px;
+
+      .info {
+        width: 46%;
+      }
 
       .screenshot {
-        width: 500px;
-        top: -60px;
-        right: -80px;
-      }
-      
-      &.flip .screenshot {
-        right: auto;
-        left: -90px;
+        width: 50%;
+
+        a {
+          display: block;
+          transform: scale(1.12);
+        }
       }
     }
   }
 
+  em {
+    font-size: 13px;
+  }
+
   .feature {
-    margin-bottom: 260px;
     display: flex;
     position: relative;
-    border-radius: 20px;
-    background: var(--bg-2);
 
     &:last-of-type {
       margin-bottom: 0;
     }
 
     &.flip {
-      justify-content: flex-end;
-
       .screenshot {
-        right: auto;
-        left: 0;
+        order: 1;
       }
 
       .info {
+        order: 2;
       }
     }
 
@@ -980,19 +984,26 @@ footer {
     }
 
     .screenshot {
-      width: 432px;
-      position: absolute;
-      top: -170px;
-      right: 0;
+      width: 42%;
+      position: relative;
     }
 
     .info {
-      max-width: 520px;
-      padding: 60px;
+      width: 50%;
+      display: flex;
+      align-content: center;
+      align-items: center;
+
+      .inner {
+        padding: 60px;
+        border-radius: 20px;
+        background: var(--bg-2);
+      }
 
       .desc {
   
         p {
+          font-size: 16px;
   
           &:last-of-type {
             margin-bottom: 0;

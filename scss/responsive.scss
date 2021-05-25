@@ -25,12 +25,22 @@
       flex-wrap: wrap;
 
       .info {
-        width: 100%;
+        width: 100% !important;
+        order: 1 !important;
+
+        .inner {
+          width: 100%;
+        }
       }
 
       .screenshot {
         width: 100% !important;
         position: static;
+        order: 2 !important;
+
+        a {
+          transform: scale(1);
+        }
 
         img {
           width: 100%;
@@ -42,6 +52,13 @@
 }
 
 @media screen and (max-width: 768px) {
+
+  section.s {
+
+    .s-title {
+      font-size: 24px;
+    }
+  }
 
   #hamburger {
     display: block;
@@ -137,8 +154,43 @@
     max-width: 100%;
   }
 
-  #downloads .item {
-    width: 100%;
+  #downloads {
+
+    .items {
+      margin: 0;
+
+      .item {
+        width: 100%;
+      }
+    }
+  }
+
+  #global-features {
+
+    .feature {
+      margin-bottom: 80px;
+      flex-wrap: wrap;
+
+      .icon {
+        width: 100%;
+        margin-bottom: 30px;
+        order: 1;
+      }
+
+      .text {
+        width: 80%;
+        margin: 0 auto;
+        order: 2;
+        text-align: center;
+
+        .desc {
+
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
   }
 
   .btn {
@@ -213,12 +265,26 @@
   }
 
   #app-features {
-    padding: 0 0 80px;
 
     .feature {
       
       .info {
-        padding: 30px;
+        width: 100% !important;
+        margin-bottom: 20px;
+
+        .desc {
+
+          p {
+            font-size: 15px ;
+          }
+        }
+      }
+
+      .screenshot {
+
+        a {
+          transform: scale(1);
+        }
       }
     }
   }

@@ -52,15 +52,6 @@
         </ul>
       </nav>
 
-      <nav class="social-icons">
-        <a href="<%- social_reddit_link %>" class="social-link" target="_blank" rel="nofollow">
-          <i class="fab fa-reddit-square" title="Reddit"></i>
-        </a>
-        <a href="<%- social_github_link %>" class="social-link" target="_blank" rel="nofollow">
-          <i class="fab fa-github-square" title="GitHub"></i>
-        </a>
-      </nav>
-
       <div class="lang-switcher">
         <span class="current-lang">
           <%- current_lang_prefix %><%- lang %>
@@ -75,6 +66,15 @@
       <div class="theme-switcher" title="<%= nav_theme_switcher_title %>">
         <div class="svg--" data-src="/icons/sun.svg"></div>
       </div>
+
+      <nav class="social-icons">
+        <a href="<%- social_reddit_link %>" class="social-link" target="_blank" rel="nofollow">
+          <i class="fab fa-reddit-square" title="Reddit"></i>
+        </a>
+        <a href="<%- social_github_link %>" class="social-link" target="_blank" rel="nofollow">
+          <i class="fab fa-github-square" title="GitHub"></i>
+        </a>
+      </nav>
       
       <button id="hamburger" type="button">
         <i class="fas fa-bars"></i>

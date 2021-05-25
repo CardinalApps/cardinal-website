@@ -42,7 +42,7 @@ module.exports = {
   
   // downloads
   "downloads_box_title": "Applications",
-  "early_access_notice": `Cardinal is early access software. Follow the progress <a href="https://github.com/somebeaver" target="_blank">on GitHub</a>.`,
+  "early_access_notice": `Cardinal is early access software. Follow the progress <a href="https://github.com/somebeaver/Cardinal-Project" target="_blank">on GitHub</a>.`,
   "in_development": "In Development",
   "development_planned": "Planned",
 
@@ -110,10 +110,11 @@ module.exports = {
                               `,
 
   // global features                             
+  "global_features_title": "There's Lots to Love About Cardinal",
   "global_features_curators_title": "Designed for Collectors",
-  "global_features_curators_desc": "<p>Cardinal apps serve curators and archivists the best. The people who choose to maintain their own collections for whatever reason. Cardinal is for you - because it's a labour of love in this era of on-demand everything.</p>",
+  "global_features_curators_desc": "<p>Cardinal apps serve curators and archivists the best. The people who choose to maintain their own collections for whatever reason. Cardinal is for you - because it's a labour of love in this era of instant on-demand everything.</p>",
   "global_features_custom_title": "Complete Customizability",
-  "global_features_custom_desc": "<p>All Cardinal apps are written 100% in JavaScript and are ready for whatever customizations you have in mind. Custom CSS can be added straight from the settings panel, and creating JavaScript plugins can be done directly in the included developer tools.</p>",
+  "global_features_custom_desc": "<p>All Cardinal apps are written in JavaScript and are ready for whatever customizations you have in mind. Custom CSS can be added directly in the settings panel, and creating JavaScript plugins can be done with the included developer tools.</p>",
   "global_features_oneserver_title": "One Server to Rule Them All",
   "global_features_oneserver_desc": "<p>It's pretty convenient only needing one app to index all of your media files. Cardinal Server handles the nitty gritty metadata details, and leaves the presentation to dedicated Cardinal apps.</p>",
   "global_features_platformless_title": "All About the Web",
@@ -130,13 +131,13 @@ module.exports = {
   "all_apps_features_honest_title": "Honest and Dependable",
   "all_apps_features_honest_desc": `<p>Ten out of ten dentists agree that they don't want crypto miners in their software. You can depend on Cardinal apps to always be honest and good&nbsp;willed.</p>`,
   "all_apps_features_offline_title": "Offline First",
-  "all_apps_features_offline_desc": `<p>Cardinal apps use your file metadata first and foremost, and don't rely on an internet connection for functionality. And with no forced authentication, your media will always be accessible, even during the next outage.</p>`,
+  "all_apps_features_offline_desc": `<p>Cardinal apps only need your local metadata, and don't rely on an internet connection for functionality. And with no forced authentication, your media will always be accessible, even during the next outage.</p>`,
   
   // getting started
   "getting_started_title": `Getting Started is Easy`,
   "getting_started_subtitle": `Cardinal doesn't require an account or anything like that, and getting set up with the ecosystem is super straightforward. Just bring your own media files.`,
   "getting_started_step_1_title": `Install the server`,
-  "getting_started_step_1_desc": `<p>No matter which Cardinal apps you want to use, the server needs to be installed first. Installers are available for macOS and Windows. Linux support is planned.</p>
+  "getting_started_step_1_desc": `<p>No matter which Cardinal apps you want to use, the server needs to be installed first. Installers are available for macOS and Windows. Linux and Docker support is planned.</p>
                                   <p>Once it's installed, start the server up.</p>
                                   `,
   "getting_started_step_2_title": `Index your media files`,
@@ -148,36 +149,42 @@ module.exports = {
   "getting_started_step_3_desc": `<p>All of the media that your server indexes is available to you through the other Cardinal apps on the same network. Each app is designed specifically for that kind of media.</p>
                                   <p>The first time you open another Cardinal app, it will ask you for the address of your server. That's all you need to connect!</p>
                                   `,
-  "getting_started_general_help": `<p>Cardinal is early access software. If you run into issues, consider leaving feedback on <a href="https://github.com/somebeaver/Cardinal-Feedback" target="_blank" rel="nofollow">GitHub</a>.</p>`,
+  "getting_started_general_help": `<p>Cardinal is early access software. If you run into issues, consider leaving feedback on <a href="https://github.com/somebeaver/Cardinal-Project" target="_blank" rel="nofollow">GitHub</a>.</p>`,
 
   // cardinal server
   "cardinal_server_title": `Cardinal Server`,
   "cardinal_server_subtitle": `Make your media available to all other Cardinal apps.`,
+  "cardinal_server_features_title": `Get to Know Cardinal Server`,
   "cardinal_server_feature_1_title": `Your Central Media Hub`,
-  "cardinal_server_feature_1_desc": `<p>Cardinal Server acts as the brains for all other Cardinal apps, and provides features for managing your devices.</p>
+  "cardinal_server_feature_1_desc": `<p>Cardinal Server acts as the brains for all other Cardinal apps, and provides features for managing the devices that are using the server.</p>
                                      <p>No matter where your media files are located, they'll be reliably available to other Cardinal apps on the same network.</p>
                                      `,
   "cardinal_server_feature_2_title": `Index Everything`,
   "cardinal_server_feature_2_desc": `<p>Cardinal Server can read your music files, TV & movie files, images, and digital book files. Just let the server know where to find your stuff and let it do the rest.</p>
-                                     <p>The first indexing run might take a little while, but every subsequent one is much faster.</p>
-                                     <p><em>Server development is still underway. Currently only music functionality is available.</em></p>
+                                     <p>The first indexing run might take a little while, but every run afterwards is much faster.</p>
+                                     <p><em>Feature in development. Currently only music functionality is available.</em></p>
                                     `,
   "cardinal_server_feature_3_title": `Monitor Connected Apps`,
   "cardinal_server_feature_3_desc": `<p>Cardinal Server lets you see what all connected Cardinal apps are doing. Whether it's the Photos app performing a regular backup, or the Music app playing in the other room, you can monitor it and control it.</p>
-                                    `,
+                                     <p>And if you aren't around, logs are kept so that you can stay in the loop.</p>`,
+  "cardinal_server_feature_4_title": `Your Data, Your Database`,
+  "cardinal_server_feature_4_desc": `<p>By default, Cardinal Server keeps your data in a SQLite database on your computer. No attempt is made to hide anything - just open 'er up and export whatever you like.</p>
+                                     <p>And if SQLite isn't enough for you, spin up a Docker PostgreSQL instance and plug the server into it.</p>
+                                     <p><em>Feature in development.</em></p>`,
   "cardinal_server_extra_features": `<li>Themes</li>
+                                     <li>Notifications</li>
                                      <li>Multiple Languages</li>
                                      <li>Alerts</li>
                                      <li>Plugins</li>
                                      <li>Statistics</li>
                                      <li>Reports</li>
-                                     <li>Exportable Database</li>
                                      <li>And More</li>
                                     `,
   
   // cardinal music
   "cardinal_music_title": `Cardinal Music`,
   "cardinal_music_subtitle": `Fully featured music app for playing and browsing your music collection.`,
+  "cardinal_music_features_title": `Get to Know Cardinal Music`,
   "cardinal_music_feature_1_title": `Personalized Home`,
   "cardinal_music_feature_1_desc": `<p>Cardinal Music keeps track of what you listen to and makes suggestions at what it thinks you'll like.</p>
                                      <p>View recently added items, recently played items, most played items, favorite items, and more.</p>
@@ -185,17 +192,22 @@ module.exports = {
   "cardinal_music_feature_2_title": `Music Orientated Features`,
   "cardinal_music_feature_2_desc": `<p>Use Cardinal Music to keep track of favorite songs, create and manage playlists, search through all of your music, and seek with the song's waveform.</p>
                                     `,
-  "cardinal_music_feature_3_title": `Easily Browse Your Collection`,
-  "cardinal_music_feature_3_desc": `<p>Browse through artists, albums, tracks, and genres. Browse an artist's discography, cleanly organized for you. See track metadata, set artist pictures, and enjoy a crisp music experience.</p>
+  "cardinal_music_feature_3_title": `Browse Your Collection`,
+  "cardinal_music_feature_3_desc": `<p>Browse through artists, albums, tracks, and genres. Browse an artist's discography, see track metadata, set artist pictures, and more.</p>
                                     `,
-  "cardinal_music_extra_features": `<li>Themes</li>
-                                     <li>Favorites</li>
+  "cardinal_music_feature_4_title": `Customize Everything`,
+  "cardinal_music_feature_4_desc": `<p>All Cardinal apps come with a dark theme and a light theme, plus hand selected accent colors. Or use custom CSS to reskin anything in the app exactly how you see fit.</p>`,
+  "cardinal_music_feature_5_title": `Designed to be Platformless`,
+  "cardinal_music_feature_5_desc": `<p>Cardinal apps embrace the web, and are designed as mobile PWA's first.</p>
+                                    <p>That means better feature parity, and a more consistent experience across platforms.</p>`,
+  "cardinal_music_extra_features": `<li>Favorites</li>
                                      <li>Multiple Languages</li>
                                      <li>Smart Shuffle</li>
                                      <li>Waveforms</li>
                                      <li>Playback History</li>
                                      <li>Plugins</li>
                                      <li>Notifications</li>
+                                     <li>Custom Images</li>
                                      <li>And More</li>
                                     `,
   
@@ -205,8 +217,8 @@ module.exports = {
   "social_reddit_link": `https://old.reddit.com/r/cardinalapps`,
   "social_reddit_desc": `General discussion and feedback`,
   "social_github_name": `On GitHub`,
-  "social_github_link": `https://github.com/somebeaver`,
-  "social_github_desc": `For collaborators`,
+  "social_github_link": `https://github.com/somebeaver/Cardinal-Project`,
+  "social_github_desc": `Technical discussion and collaboration`,
 
   // images
   "logo_alt": "Cardinal logo",
@@ -236,14 +248,14 @@ module.exports = {
   "pp_page_title": "Cardinal Privacy Policy",
   "pp_meta_desc": "Cardinal Privacy Policy",
   "pp_title": "Privacy Policy",
-  "pp_body": `<h6>During the intended usage* of any Cardinal application:</h6>
+  "pp_body": `<h6>During the intended usage of any Cardinal application:</h6>
               <p>No data is collected.</p>
               <h6>When updating a Cardinal application using the built-in updater:</h6>
               <p>The application will connect to a GitHub server. The data that GitHub may record is out of Cardinal's control.</p>
               <h6>When you use the Cardinal website:</h6>
               <p>The Cardinal website uses Google Analytics and Google Fonts. The data that Google may record is out of Cardinal's control.</p>
-              <ul class="footnotes">
+              <!--<ul class="footnotes">
                <li>* Intended usage means using the Cardinal software as it was designed to be used. Why is this important? Cardinal ships with 3rd party open source code (rendering engine, Node.js, and more), which the user can access by bypassing the Cardinal code. If bypassing or manipulating Cardinal code causes untended server communication (i.e., crashing Chromium in a way that automatically sends a bug report to a 3rd party), this would not be considered intended usage.</li>
-              </ul>
+              </ul>-->
               `,
 }

@@ -18,14 +18,14 @@
   <body data-os="<%- os %>">
     <%- include('includes/header.ejs') %>
 
-    <section class="home-section landing">
+    <section id="landing" class="s">
       <div class="wrap-l">
         <h1><%- landing_line_1 %></h1>
         <div class="landing-desc"><%- landing_line_desc %></div>
       </div>
     </section>
 
-    <section id="downloads" class="wrap-l home-section">
+    <section id="downloads" class="wrap-l s">
       <h3><%- downloads_box_title %></h3>
 
       <div class="subtitle-notices">
@@ -33,110 +33,110 @@
         <p class="download-agreement"><%- download_agreement %></p>
       </div>
 
-      <div class="box">
-        <div class="items">
+      <div class="items">
 
-          <!-- server -->
-          <div class="item">
-            <div class="icon">
-              <img src="/icons/logo-server.svg" alt="<%- server_icon_alt %>" title="<%- server_icon_title %>">
-            </div>
-            <div class="meta">
-              <h4 class="name"><%- app_name_server %></h4>
-              <p class="description"><%- downloads_server_desc %></p>
-              <ul class="features">
-                <%- downloads_server_features %>
-              </ul>
-            </div>
-            <div class="platforms">
-              <div class="all"><a href="<%- lang %>cardinal-server"><%- downloads_server_all %></a></div>
-              <%- include('includes/buttons/server-macos.ejs') %>
-              <%- include('includes/buttons/server-windows.ejs') %>
-              <a href="<%- lang %>/cardinal-server" class="btn">
-                <%- all_platforms %>
-              </a>
-            </div>
+        <!-- server -->
+        <div class="item">
+          <div class="icon">
+            <img src="/icons/logo-server.svg" alt="<%- server_icon_alt %>" title="<%- server_icon_title %>">
           </div>
-
-          <!-- music -->
-          <div class="item">
-            <div class="icon">
-              <img src="/icons/logo-music.svg" alt="<%- music_icon_alt %>" title="<%- music_icon_title %>">
-            </div>
-            <div class="meta">
-              <h4 class="name"><%- app_name_music %></h4>
-              <p class="description"><%- downloads_music_desc %></p>
-              <ul class="features">
-                <%- downloads_music_features %>
-              </ul>
-            </div>
-            <div class="platforms">
-              <div class="all"><a href="/<%- lang %>/cardinal-music"><%- downloads_music_all %></a></div>
-              <%- include('includes/buttons/music-macos.ejs') %>
-              <%- include('includes/buttons/music-windows.ejs') %>
-              <a href="<%- lang %>/cardinal-music" class="btn">
-                <%- all_platforms %>
-              </a>
-            </div>
+          <div class="meta">
+            <h4 class="name"><%- app_name_server %></h4>
+            <p class="description"><%- downloads_server_desc %></p>
+            <ul class="features">
+              <%- downloads_server_features %>
+            </ul>
           </div>
-
-          <!-- photos -->
-          <div class="item in-development">
-            <div class="icon">
-              <img src="/icons/logo-photos.svg" alt="<%- photos_icon_alt %>" title="<%- photos_icon_title %>">
-            </div>
-            <div class="meta">
-              <h4 class="name"><%- app_name_photos %></h4>
-              <p class="description"><%- downloads_photos_desc %></p>
-              <ul class="features">
-                <%- downloads_photos_features %>
-              </ul>
-            </div>
-            <div class="platforms">
-              <p><%- in_development %></p>
-            </div>
+          <div class="platforms">
+            <div class="all"><a href="<%- lang %>cardinal-server"><%- downloads_server_all %></a></div>
+            <%- include('includes/buttons/server-macos.ejs') %>
+            <%- include('includes/buttons/server-windows.ejs') %>
+            <a href="<%- lang %>/cardinal-server" class="btn">
+              <%- all_platforms %>
+            </a>
           </div>
-
-          <!-- movies & tv -->
-          <div class="item in-development">
-            <div class="icon">
-              <img src="/icons/logo-cinema.svg" alt="<%- cinema_icon_alt %>" title="<%- cinema_icon_title %>">
-            </div>
-            <div class="meta">
-              <h4 class="name"><%- app_name_cinema %></h4>
-              <p class="description"><%- downloads_cinema_desc %></p>
-              <ul class="features">
-                <%- downloads_cinema_features %>
-              </ul>
-            </div>
-            <div class="platforms">
-              <p><%- development_planned %></p>
-            </div>
-          </div>
-
-          <!-- books -->
-          <div class="item in-development">
-            <div class="icon">
-              <img src="/icons/logo-books.svg" alt="<%- books_icon_alt %>" title="<%- books_icon_title %>">
-            </div>
-            <div class="meta">
-              <h4 class="name"><%- app_name_books %></h4>
-              <p class="description"><%- downloads_books_desc %></p>
-              <ul class="features">
-                <%- downloads_books_features %>
-              </ul>
-            </div>
-            <div class="platforms">
-              <p><%- development_planned %></p>
-            </div>
-          </div>
-
         </div>
+
+        <!-- music -->
+        <div class="item">
+          <div class="icon">
+            <img src="/icons/logo-music.svg" alt="<%- music_icon_alt %>" title="<%- music_icon_title %>">
+          </div>
+          <div class="meta">
+            <h4 class="name"><%- app_name_music %></h4>
+            <p class="description"><%- downloads_music_desc %></p>
+            <ul class="features">
+              <%- downloads_music_features %>
+            </ul>
+          </div>
+          <div class="platforms">
+            <div class="all"><a href="/<%- lang %>/cardinal-music"><%- downloads_music_all %></a></div>
+            <%- include('includes/buttons/music-macos.ejs') %>
+            <%- include('includes/buttons/music-windows.ejs') %>
+            <a href="<%- lang %>/cardinal-music" class="btn">
+              <%- all_platforms %>
+            </a>
+          </div>
+        </div>
+
+        <!-- photos -->
+        <div class="item in-development">
+          <div class="icon">
+            <img src="/icons/logo-photos.svg" alt="<%- photos_icon_alt %>" title="<%- photos_icon_title %>">
+          </div>
+          <div class="meta">
+            <h4 class="name"><%- app_name_photos %></h4>
+            <p class="description"><%- downloads_photos_desc %></p>
+            <ul class="features">
+              <%- downloads_photos_features %>
+            </ul>
+          </div>
+          <div class="platforms">
+            <p><%- in_development %></p>
+          </div>
+        </div>
+
+        <!-- movies & tv -->
+        <div class="item in-development">
+          <div class="icon">
+            <img src="/icons/logo-cinema.svg" alt="<%- cinema_icon_alt %>" title="<%- cinema_icon_title %>">
+          </div>
+          <div class="meta">
+            <h4 class="name"><%- app_name_cinema %></h4>
+            <p class="description"><%- downloads_cinema_desc %></p>
+            <ul class="features">
+              <%- downloads_cinema_features %>
+            </ul>
+          </div>
+          <div class="platforms">
+            <p><%- development_planned %></p>
+          </div>
+        </div>
+
+        <!-- books -->
+        <div class="item in-development">
+          <div class="icon">
+            <img src="/icons/logo-books.svg" alt="<%- books_icon_alt %>" title="<%- books_icon_title %>">
+          </div>
+          <div class="meta">
+            <h4 class="name"><%- app_name_books %></h4>
+            <p class="description"><%- downloads_books_desc %></p>
+            <ul class="features">
+              <%- downloads_books_features %>
+            </ul>
+          </div>
+          <div class="platforms">
+            <p><%- development_planned %></p>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <section id="global-features" class="home-section">
+    <section id="global-features" class="s">
       <div class="wrap-m">
+
+        <h3 class="s-title"><%- global_features_title %></h3>
 
         <!-- collectors -->
         <div class="feature">
@@ -176,7 +176,7 @@
           </div>
 
           <div class="icon">
-            <div class="box"><i class="fas fa-crown"></i></div>
+            <div class="box"><i class="fas fa-ring"></i></div>
           </div>
         </div>
 
@@ -196,7 +196,7 @@
       </div>
     </section>
 
-    <section id="core-values" class="wrap-m home-section">
+    <section id="core-values" class="wrap-m s">
       <h3><%- all_apps_features_title %></h3>
       <div class="core-value-list">
 

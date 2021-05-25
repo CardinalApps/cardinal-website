@@ -18,8 +18,8 @@
   <body data-os="<%- os %>">
     <%- include('includes/header.ejs') %>
 
-    <section id="single-app-top" class="first landing">
-      <div class="wrap-m">
+    <section id="landing" class="first">
+      <div class="wrap-l">
         <h1 class="inner"><%- cardinal_music_title %></h1>
         <h2 class="inner"><%- cardinal_music_subtitle %></h1>
 
@@ -30,41 +30,77 @@
       </div>
     </section>
 
-    <section id="app-features" class="music">
-      <div class="wrap-m">
+    <section id="app-features" class="s music">
+      <div class="wrap-l">
+
+        <h3 class="s-title"><%- cardinal_music_features_title %></h3>
 
         <div class="feature">
           <div class="info">
-            <h3 class="title"><%- cardinal_music_feature_1_title %></h3>
-            <div class="desc"><%- cardinal_music_feature_1_desc %></div>
+            <div class="inner">
+              <h3 class="title"><%- cardinal_music_feature_1_title %></h3>
+              <div class="desc"><%- cardinal_music_feature_1_desc %></div>
+            </div>
           </div>
           <div class="screenshot">
             <a href="/screenshots/music-explore.png" target="_blank">
-              <img src="/screenshots/music-explore.png" alt="Screenshot">
+              <img src="/screenshots/thumbs/music-explore.png" alt="Screenshot">
             </a>
           </div>
         </div>
 
         <div class="feature flip">
           <div class="info">
-            <h3 class="title"><%- cardinal_music_feature_2_title %></h3>
-            <div class="desc"><%- cardinal_music_feature_2_desc %></div>
+            <div class="inner">
+              <h3 class="title"><%- cardinal_music_feature_3_title %></h3>
+              <div class="desc"><%- cardinal_music_feature_3_desc %></div>
+            </div>
           </div>
           <div class="screenshot">
-            <a href="/screenshots/music-search.png" target="_blank">
-              <img src="/screenshots/music-search.png" alt="Screenshot">
+            <a href="/screenshots/music-release.png" target="_blank">
+              <img src="/screenshots/thumbs/music-release.png" alt="Screenshot">
             </a>
           </div>
         </div>
 
         <div class="feature">
           <div class="info">
-            <h3 class="title"><%- cardinal_music_feature_3_title %></h3>
-            <div class="desc"><%- cardinal_music_feature_3_desc %></div>
+            <div class="inner">
+              <h3 class="title"><%- cardinal_music_feature_2_title %></h3>
+              <div class="desc"><%- cardinal_music_feature_2_desc %></div>
+            </div>
+          </div>
+          <div class="screenshot">
+            <a href="/screenshots/music-playlist.png" target="_blank">
+              <img src="/screenshots/thumbs/music-playlist.png" alt="Screenshot">
+            </a>
+          </div>
+        </div>
+
+        <div class="feature flip">
+          <div class="info">
+            <div class="inner">
+              <h3 class="title"><%- cardinal_music_feature_5_title %></h3>
+              <div class="desc"><%- cardinal_music_feature_5_desc %></div>
+            </div>
           </div>
           <div class="screenshot">
             <a href="/screenshots/music-artist.png" target="_blank">
-              <img src="/screenshots/music-artist.png" alt="Screenshot">
+              <img src="/screenshots/thumbs/music-artist.png" alt="Screenshot">
+            </a>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="info">
+            <div class="inner">
+              <h3 class="title"><%- cardinal_music_feature_4_title %></h3>
+              <div class="desc"><%- cardinal_music_feature_4_desc %></div>
+            </div>
+          </div>
+          <div class="screenshot">
+            <a href="/screenshots/music-themes.png" target="_blank">
+              <img src="/screenshots/thumbs/music-themes.png" alt="Screenshot">
             </a>
           </div>
         </div>

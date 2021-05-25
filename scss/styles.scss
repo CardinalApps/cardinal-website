@@ -7,6 +7,7 @@
   --base-font: 'Open sans', sans-serif;
   --accent-font: 'Yantramanav', sans-serif;
   --header-height: 72px;
+  --fat: 100px;
 }
 
 body.dark {
@@ -25,8 +26,8 @@ body.dark {
 
 body.light {
   --bg: #ffffff;
-  --bg-2: #e4e4e4;
-  --bg-3: #dedede;
+  --bg-2: #eae9e9;
+  --bg-3: #ececec;
   --bg-4: #f0f0f0;
   --btn-color: #cfcfcf;
   --btn-color-hover: #acacac;
