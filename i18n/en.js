@@ -156,8 +156,8 @@ module.exports = {
   "cardinal_server_subtitle": `Make your media available to all other Cardinal apps.`,
   "cardinal_server_features_title": `Get to Know Cardinal Server`,
   "cardinal_server_feature_1_title": `Your Central Media Hub`,
-  "cardinal_server_feature_1_desc": `<p>Cardinal Server acts as the brains for all other Cardinal apps, and provides features for managing the devices that are using the server.</p>
-                                     <p>No matter where your media files are located, they'll be reliably available to other Cardinal apps on the same network.</p>
+  "cardinal_server_feature_1_desc": `<p>Cardinal Server handles all your media in one app, making it super easy to keep everything organized.</p>
+                                     <p>No matter where your media files are located, they'll be available to other Cardinal apps on the same network.</p>
                                      `,
   "cardinal_server_feature_2_title": `Index Everything`,
   "cardinal_server_feature_2_desc": `<p>Cardinal Server can read your music files, TV & movie files, images, and digital book files. Just let the server know where to find your stuff and let it do the rest.</p>
@@ -166,7 +166,7 @@ module.exports = {
                                     `,
   "cardinal_server_feature_3_title": `Monitor Connected Apps`,
   "cardinal_server_feature_3_desc": `<p>Cardinal Server lets you see what all connected Cardinal apps are doing. Whether it's the Photos app performing a regular backup, or the Music app playing in the other room, you can monitor it and control it.</p>
-                                     <p>And if you aren't around, logs are kept so that you can stay in the loop.</p>`,
+                                     <p>And if you aren't around to see the notification, logs are kept so that you can stay in the loop.</p>`,
   "cardinal_server_feature_4_title": `Your Data, Your Database`,
   "cardinal_server_feature_4_desc": `<p>By default, Cardinal Server keeps your data in a SQLite database on your computer. No attempt is made to hide anything - just open 'er up and export whatever you like.</p>
                                      <p>And if SQLite isn't enough for you, spin up a Docker PostgreSQL instance and plug the server into it.</p>
