@@ -280,7 +280,7 @@ svg path { fill: var(--text-color); }
 
 #social-media .social-link i.fa-discord { position: relative; top: 3px; }
 
-footer { width: 100%; display: flex; flex-wrap: wrap; }
+footer { width: 100%; display: flex; flex-wrap: wrap; padding-top: 60px; }
 
 footer .inline { width: 100%; margin: 0 20px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; }
 
