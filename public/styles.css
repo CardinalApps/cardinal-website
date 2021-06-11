@@ -84,6 +84,8 @@ header#site-header .social-icons { padding-left: 20px; }
 
 header#site-header .social-icons i { font-size: 28px; }
 
+header#site-header .social-icons .fa-discord { position: relative; top: 2px; }
+
 #logo { color: var(--text-color); font: 25px var(--accent-font); letter-spacing: 0.12em; }
 
 #logo a { color: inherit; display: flex; align-items: center; }
