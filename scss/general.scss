@@ -418,7 +418,7 @@ svg path {
 
 #landing {
   padding: 190px 0 120px;
-  background: linear-gradient(123deg, var(--bg-2), var(--bg-3))
+  background: var(--bg-2);
 }
 
 .landing-desc p {
@@ -579,7 +579,7 @@ svg path {
   .desc {
 
     p {
-      font-size: 16px;
+      font-size: 17px;
     }
   }
 

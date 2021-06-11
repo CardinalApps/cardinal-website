@@ -152,7 +152,7 @@ nav a:first-of-type { margin-left: 0; }
 
 svg path { fill: var(--text-color); }
 
-#landing { padding: 190px 0 120px; background: linear-gradient(123deg, var(--bg-2), var(--bg-3)); }
+#landing { padding: 190px 0 120px; background: var(--bg-2); }
 
 .landing-desc p { max-width: 64%; margin: 0 auto 10px; font: 600 18px/1.6em var(--base-font); color: var(--text-color-2); text-align: center; }
 
@@ -204,7 +204,7 @@ svg path { fill: var(--text-color); }
 
 #global-features h5 { color: var(--text-color); }
 
-#global-features .desc p { font-size: 16px; }
+#global-features .desc p { font-size: 17px; }
 
 #global-features .feature { margin-bottom: 170px; display: flex; }
 
