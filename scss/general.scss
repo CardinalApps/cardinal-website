@@ -750,6 +750,7 @@ svg path {
 
 #social-media {
   width: 100%;
+  padding: 0 10px;
 
   .social-title {
     margin-bottom: 20px;
@@ -789,6 +790,7 @@ svg path {
     }
 
     .desc {
+      padding: 0 5px;
       margin-bottom: 0;
       text-align: center;
       font: 12px var(--base-font);
@@ -797,13 +799,17 @@ svg path {
     i {
       font-size: 60px;
       color: var(--text-color-2);
+
+      &.fa-discord {
+        position: relative;
+        top: 3px;
+      }
     }
   }
 }
 
 footer {
   width: 100%;
-  padding: 30px;
   display: flex;
   flex-wrap: wrap;
 

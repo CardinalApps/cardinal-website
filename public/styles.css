@@ -260,7 +260,7 @@ svg path { fill: var(--text-color); }
 
 .core-value-list .core-value .info p { margin-bottom: 0; font: 15px/1.6em var(--base-font); }
 
-#social-media { width: 100%; }
+#social-media { width: 100%; padding: 0 10px; }
 
 #social-media .social-title { margin-bottom: 20px; font: 600 22px var(--base-font); text-align: center; color: var(--text-color); }
 
@@ -274,11 +274,13 @@ svg path { fill: var(--text-color); }
 
 #social-media .social-link .name { margin-bottom: 10px; text-align: center; font: 600 14px var(--base-font); }
 
-#social-media .social-link .desc { margin-bottom: 0; text-align: center; font: 12px var(--base-font); }
+#social-media .social-link .desc { padding: 0 5px; margin-bottom: 0; text-align: center; font: 12px var(--base-font); }
 
 #social-media .social-link i { font-size: 60px; color: var(--text-color-2); }
 
-footer { width: 100%; padding: 30px; display: flex; flex-wrap: wrap; }
+#social-media .social-link i.fa-discord { position: relative; top: 3px; }
+
+footer { width: 100%; display: flex; flex-wrap: wrap; }
 
 footer .inline { width: 100%; margin: 0 20px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; }
 

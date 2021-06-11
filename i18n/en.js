@@ -206,9 +206,12 @@ module.exports = {
   
   // social
   "social_title": `Get Involved`,
+  "social_discord_name": `On Discord`,
+  "social_discord_link": `https://discord.gg/WWXngggPp4`,
+  "social_discord_desc": `Casual discussion and feedback`,
   "social_reddit_name": `On Reddit`,
   "social_reddit_link": `https://old.reddit.com/r/cardinalapps`,
-  "social_reddit_desc": `General discussion and feedback`,
+  "social_reddit_desc": `Casual discussion and feedback`,
   "social_github_name": `On GitHub`,
   "social_github_link": `https://github.com/somebeaver/Cardinal-Project`,
   "social_github_desc": `Technical discussion and collaboration`,
