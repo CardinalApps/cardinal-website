@@ -731,6 +731,10 @@ svg path {
     border-radius: 30px;
     background-color: var(--bg-2);
 
+    &.wide {
+      width: 100%;
+    }
+
     .name {
       display: flex;
       justify-content: space-between;
@@ -741,13 +745,21 @@ svg path {
         font-size: 30px;
         color: var(--accent-color);
       }
+
+      strong {
+        font-weight: 800;
+      }
     }
 
     .info {
 
       p {
-        margin-bottom: 0;
+        margin-bottom: 10px;
         font: 15px/1.6em var(--base-font);
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -952,7 +964,8 @@ footer {
   &.music {
 
     .feature {
-      margin-bottom: 130px;
+      margin-bottom: 160px;
+      justify-content: center;
 
       .info {
         width: 46%;
@@ -960,6 +973,15 @@ footer {
 
       .screenshot {
         width: 50%;
+
+        &.mobile {
+          width: 30%;
+
+          img {
+            box-shadow: 0 0 6px 5px rgba(0,0,0,0.3);
+            border-radius: 6px;
+          }
+        }
 
         a {
           display: block;
@@ -1055,5 +1077,32 @@ footer {
   .back-to-top {
     padding-top: 40px;
     text-align: center;
+  }
+}
+
+#using-web-apps {
+  padding: calc(var(--fat) * 2) 0;
+
+  .title {
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  .cols {
+    display: flex;
+    align-items: center;
+  }
+
+  .desc-col {
+    width: 60%;
+  }
+
+  .img-col {
+    width: 40%;
+    text-align: center;
+
+    img {
+      max-width: 300px;
+    }
   }
 }

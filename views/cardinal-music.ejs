@@ -26,6 +26,7 @@
         <div class="buttons">
           <%- include('includes/buttons/music-macos.ejs') %>
           <%- include('includes/buttons/music-windows.ejs') %>
+          <%- include('includes/buttons/music-webapp.ejs') %>
         </div>
       </div>
     </section>
@@ -56,9 +57,9 @@
               <div class="desc"><%- cardinal_music_feature_3_desc %></div>
             </div>
           </div>
-          <div class="screenshot">
-            <a href="/screenshots/music-release.png" target="_blank">
-              <img src="/screenshots/thumbs/music-release.png" alt="Screenshot">
+          <div class="screenshot mobile">
+            <a href="/screenshots/mobile-releases.png" target="_blank">
+              <img src="/screenshots/thumbs/mobile-releases.png" alt="Screenshot">
             </a>
           </div>
         </div>
@@ -84,9 +85,9 @@
               <div class="desc"><%- cardinal_music_feature_5_desc %></div>
             </div>
           </div>
-          <div class="screenshot">
-            <a href="/screenshots/music-artist.png" target="_blank">
-              <img src="/screenshots/thumbs/music-artist.png" alt="Screenshot">
+          <div class="screenshot mobile">
+            <a href="/screenshots/mobile-explore.png" target="_blank">
+              <img src="/screenshots/thumbs/mobile-explore.png" alt="Screenshot">
             </a>
           </div>
         </div>
@@ -107,6 +108,8 @@
 
       </div>
     </section>
+
+    <%- include('includes/using-web-apps.ejs') %>
 
     <section id="more-features">
       <div class="wrap-s">

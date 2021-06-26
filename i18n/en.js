@@ -38,6 +38,7 @@ module.exports = {
                         <p class="emojis">🎧&nbsp;&nbsp;🍿&nbsp;&nbsp;🌉&nbsp;&nbsp;📚</p>`,
   "download_mac": "Download for macOS<sup>®</sup>",
   "download_win": `Download for Windows<sup>®</sup>`,
+  "download_web": `Use the Web App`,
   "download_agreement": `By downloading Cardinal, you agree to the <a href="/en/terms-and-conditions">Terms & Conditions</a> and <a href="/en/privacy-policy">Privacy Policy</a>.`,
   
   // downloads
@@ -51,78 +52,76 @@ module.exports = {
   "downloads_server_features": `
                                <li>Free</li>
                                <li>No ads, no tracking</li>
-                               <li>Runs on macOS and Windows</li>
-                               <li>Power all of your Cardinal client apps</li>
-                               <li>One button to easily index your files</li>
+                               <li>One button to easily index and update your files</li>
+                               <li>Stream media to Cardinal client apps</li>
+                               <li>Includes web apps for any device with a browser</li>
                                <li>Monitor and control connected client apps</li>
                                `,
 
-  "downloads_music_desc": "Music player & library for high fidelity audio playback and music collection management.",
+  "downloads_music_desc": "Music player and library for high fidelity audio playback and music collection browsing.",
   "downloads_music_all": "See all Cardinal Music features",
   "downloads_music_features": `
-                              <li>Free</li>
+                              <li>Free desktop and web apps</li>
                               <li>No ads, no tracking</li>
-                              <li>Streams music from your Cardinal Server</li>
                               <li>Personalized music suggestions</li>
+                              <li>Browse through artists, releases, songs, and genres</li>
+                              <li>Scrub through a song's waveform</li>
                               <li>Create and manage playlists</li>
-                              <li>Search through your music</li>
-                              <li>Supports all popular music file types</li>
                               `,
 
-  "downloads_photos_desc": "Photo gallery that makes it easy to view and organize all of your digital photos.",
+  "downloads_photos_desc": "Photo gallery for viewing and organizing all of your digital photos.",
   "downloads_photos_all": "See all Cardinal Photos features",
   "downloads_photos_features": `
-                              <li>Free</li>
-                              <li>No ads, tracking</li>
-                              <li>Automatically back up your photos to Cardinal Server</li>
+                              <li>Free desktop and web apps</li>
+                              <li>No ads, no tracking</li>
                               <li>Organize your photos into libraries</li>
-                              <li>Sort by year, tag, rating, and more</li>
+                              <li>Sort by year, tag, rating, type, and more</li>
                               <li>Keep selected photos private and hidden</li>
                               `,
 
-  "downloads_cinema_desc": "Cinema app for watching and organizing movies and TV",
+  "downloads_cinema_desc": "Cinema app for streaming your movies and TV with modern playback features.",
   "downloads_cinema_all": "See all Cardinal TV & Movies features",
   "downloads_cinema_features": `
-                              <li>Free</li>
+                              <li>Free desktop and web apps</li>
                               <li>No ads, no tracking</li>
-                              <li>Replicate the cable TV experience with channels</li>
+                              <li>Create the cable TV experience with custom channels</li>
                               <li>Full quality direct streaming of your video files</li>
                               <li>Organize movies and TV Shows into collections</li>
                               <li>Shuffle TV shows by season or series</li>
                               `,
 
-  "downloads_books_desc": "Organize your e-books and audiobooks together in one library, and read them on all your devices.",
+  "downloads_books_desc": "Unified digital library of your e-books and audiobooks, together in one place.",
   "downloads_books_all": "See all Cardinal Books features",
   "downloads_books_features": `
-                              <li>Free</li>
+                              <li>Free desktop and web apps</li>
                               <li>No ads, no tracking</li>
-                              <li>Unified book library</li>
+                              <li>One library for all formats of digital books</li>
                               <li>Jump to chapters and phrases</li>
                               <li>Fine tuned typography controls</li>
-                              <li>Blur upcoming paragraphs until manual uncovering</li>
+                              <li>Blur upcoming paragraphs</li>
                               `,
 
   // global features                             
   "global_features_title": "There's Lots to Love About Cardinal",
   "global_features_curators_title": "Designed for DIYers",
-  "global_features_curators_desc": "<p>Cardinal apps serve self-hosters the best. The people who choose to maintain their own collections for whatever reason. Cardinal is for you&nbsp;-&nbsp;because it's a labour of love in this era of instant on‑demand everything.</p>",
+  "global_features_curators_desc": "<p>Cardinal apps serve self-hosters the best. The people who choose to maintain their own collections for whatever reason. Cardinal is for you&nbsp;-&nbsp;because it's a labour of love in this era of instant on‑demand streaming.</p>",
   "global_features_custom_title": "Complete Customizability",
   "global_features_custom_desc": "<p>All Cardinal apps are written in JavaScript and are ready for whatever customizations you have in mind. Custom CSS can be added directly in the settings panel, and creating JavaScript plugins can be done with the included developer tools.</p>",
   "global_features_oneserver_title": "One Server to Rule Them All",
-  "global_features_oneserver_desc": "<p>It's pretty convenient having one centralized location for all your media files. Just let Cardinal Server run in the background, and enjoy all of your media instantly in all Cardinal client apps.</p>",
+  "global_features_oneserver_desc": "<p>It's pretty convenient having one centralized location for all your media. Once the Server is set up, all the web apps are immediately available to all your smart devices, and native apps can be installed for an even better experience.</p>",
   "global_features_platformless_title": "All About the Web",
-  "global_features_platformless_desc": `<p>Cardinal embraces the web and tries to stay as platformless as possible. Mobile Cardinal apps are designed as PWA's first, reaching more platforms and devices quicker.</p>
+  "global_features_platformless_desc": `<p>Cardinal embraces the web and tries to stay as platformless as possible. The mobile web apps are as fully featured as possible, and aren't just an afterthought.</p>
                                         <p><a href='https://github.com/somebeaver/Cardinal-Project#development-philosophy' target="_blank">Read the development philosophy.</a></p>`,
 
   // core values
   "all_apps_features_title": "Cardinal Core Values",
-  "more_app_features": "And Plenty More",
+  "more_app_features": "And There's More",
   "all_apps_features_privacy_title": "Zero Data Collection",
   "all_apps_features_privacy_desc": `<p>Cardinal apps don't collect any data whatsoever and never phone home. Privacy is non-negotiable when it comes to your personal files.</p>`,
   "all_apps_features_adfree_title": "No Ads, No Marketing",
   "all_apps_features_adfree_desc": `<p>Ads ruin everything. Cardinal apps will never run ads of any kind, and will never try to pull any stealthy marketing shenanigans.</p>`,
-  "all_apps_features_honest_title": "Honest and True",
-  "all_apps_features_honest_desc": `<p>Ten out of ten dentists agree that they don't want crypto miners in their software. You can depend on Cardinal apps to always be honest and good&nbsp;willed.</p>`,
+  "all_apps_features_honest_title": "<strong>Actual</strong> Privacy",
+  "all_apps_features_honest_desc": `<p>When big tech tells you they respect your privacy, what they're really asking for is your trust. Trust that they won't one day change their intentions.</p><p>With Cardinal, your data never leaves your hardware, and there's no need to trust a third&nbsp;party.</p>`,
   "all_apps_features_offline_title": "Offline First",
   "all_apps_features_offline_desc": `<p>All Cardinal features can be enjoyed without ever having internet access. All that's needed is your files, the server app will handle the rest.</p>`,
   
@@ -150,7 +149,7 @@ module.exports = {
   "cardinal_server_features_title": `Get to Know Cardinal Server`,
   "cardinal_server_feature_1_title": `Your Central Media Hub`,
   "cardinal_server_feature_1_desc": `<p>Cardinal Server handles all your media in one app, making it super easy to keep everything organized.</p>
-                                     <p>No matter where your media files are located, they'll be available to other Cardinal apps on the same network.</p>
+                                     <p>No matter where your media files are located, they'll be available to other Cardinal apps on the same network, whether they're using the web apps or the native ones.</p>
                                      `,
   "cardinal_server_feature_2_title": `Index Everything`,
   "cardinal_server_feature_2_desc": `<p>Cardinal Server can read your music files, TV & movie files, images, and digital book files. Just let the server know where to find your stuff and let it do the rest.</p>
@@ -163,7 +162,7 @@ module.exports = {
   "cardinal_server_feature_4_title": `It's Your Data`,
   "cardinal_server_feature_4_desc": `<p>Cardinal Server keeps your data in a SQLite database on your computer. You can just open 'er up and export whatever you like.</p>
                                      <p>And if SQLite isn't enough for you, spin up a Docker PostgreSQL instance and plug the server into it.</p>
-                                     <p><em>Feature in development.</em></p>`,
+                                     <p><em>Docker and PostgreSQL features in development.</em></p>`,
   "cardinal_server_extra_features": `<li>Themes</li>
                                      <li>Notifications</li>
                                      <li>Multiple Languages</li>
@@ -171,7 +170,6 @@ module.exports = {
                                      <li>Plugins</li>
                                      <li>Statistics</li>
                                      <li>Reports</li>
-                                     <li>And More</li>
                                     `,
   
   // cardinal music
@@ -183,16 +181,16 @@ module.exports = {
                                      <p>View recently added items, recently played items, most played items, favorite items, and more.</p>
                                      `,
   "cardinal_music_feature_2_title": `Music Orientated Features`,
-  "cardinal_music_feature_2_desc": `<p>Use Cardinal Music to keep track of favorite songs, create and manage playlists, search through all of your music, and seek with the song's waveform.</p>
-                                    `,
+  "cardinal_music_feature_2_desc": `<p>Streaming is handled by Cardinal Server, and it doesn't alter your sound in any way. Enjoy your files at their full untouched quality.</p>
+                                    <p>And the Server will also create waveforms for you, making it a little easier to seek through songs.</p>`,
   "cardinal_music_feature_3_title": `Browse Your Collection`,
-  "cardinal_music_feature_3_desc": `<p>Browse through artists, albums, tracks, and genres. Browse an artist's discography, see track metadata, set artist pictures, and more.</p>
+  "cardinal_music_feature_3_desc": `<p>Browse through artists, albums, tracks, and genres. Browse an artist's discography, see track metadata, add favorites, and more.</p>
                                     `,
   "cardinal_music_feature_4_title": `Customize Everything`,
   "cardinal_music_feature_4_desc": `<p>All Cardinal apps come with a dark theme and a light theme, plus hand selected accent colors. Or use custom CSS to reskin anything in the app exactly how you see fit.</p>`,
   "cardinal_music_feature_5_title": `Designed to be Platformless`,
-  "cardinal_music_feature_5_desc": `<p>Cardinal apps embrace the web, and are designed as mobile PWA's first.</p>
-                                    <p>That means better feature parity, and a more consistent experience across platforms.</p>`,
+  "cardinal_music_feature_5_desc": `<p>Cardinal apps embrace the web stack, and are designed as web apps first. That means easier feature parity, better code reusability, and a more consistent experience across platforms.</p>
+                                    <p>But not everything can be done with the web, so native apps are used to bridge the gap. Installers are available for macOS and Windows, with native iOS and Android apps planned.</p>`,
   "cardinal_music_extra_features": `<li>Favorites</li>
                                      <li>Multiple Languages</li>
                                      <li>Smart Shuffle</li>
@@ -200,9 +198,13 @@ module.exports = {
                                      <li>Playback History</li>
                                      <li>Plugins</li>
                                      <li>Notifications</li>
-                                     <li>Custom Images</li>
-                                     <li>And More</li>
                                     `,
+
+  // web app instructions on all app pages
+  "using_web_apps_title": `Using Web Apps`,
+  "using_web_apps_desc": `<p>The best way to use Cardinal is with the native apps - they have more features and they provide a smoother experience.</p>
+                          <p>But if you want to use Cardinal on a device that doesn't have a native app yet, the web apps are the way to do it.</p>
+                          <p>All you need is Cardinal Server. The URLs are available in the Apps section of the Overview page.</p>`,
   
   // social
   "social_title": `Get Involved`,

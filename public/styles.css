@@ -256,11 +256,17 @@ svg path { fill: var(--text-color); }
 
 .core-value-list .core-value { width: calc(50% - 10px); margin-bottom: 20px; padding: 40px; border-radius: 30px; background-color: var(--bg-2); }
 
+.core-value-list .core-value.wide { width: 100%; }
+
 .core-value-list .core-value .name { display: flex; justify-content: space-between; }
 
 .core-value-list .core-value .name i { width: 40px; text-align: center; font-size: 30px; color: var(--accent-color); }
 
-.core-value-list .core-value .info p { margin-bottom: 0; font: 15px/1.6em var(--base-font); }
+.core-value-list .core-value .name strong { font-weight: 800; }
+
+.core-value-list .core-value .info p { margin-bottom: 10px; font: 15px/1.6em var(--base-font); }
+
+.core-value-list .core-value .info p:last-of-type { margin-bottom: 0; }
 
 #social-media { width: 100%; padding: 0 10px; }
 
@@ -330,11 +336,15 @@ footer .attributions a:hover { text-decoration: none; }
 
 #getting-started-disclaimer p a { color: var(--accent); }
 
-#app-features.music .feature { margin-bottom: 130px; }
+#app-features.music .feature { margin-bottom: 160px; justify-content: center; }
 
 #app-features.music .feature .info { width: 46%; }
 
 #app-features.music .feature .screenshot { width: 50%; }
+
+#app-features.music .feature .screenshot.mobile { width: 30%; }
+
+#app-features.music .feature .screenshot.mobile img { box-shadow: 0 0 6px 5px rgba(0, 0, 0, 0.3); border-radius: 6px; }
 
 #app-features.music .feature .screenshot a { display: block; transform: scale(1.12); }
 
@@ -369,6 +379,18 @@ footer .attributions a:hover { text-decoration: none; }
 #more-features ul li { padding: 9px 12px; margin: 8px; border-radius: 6px; font: 600 16px var(--base-font); color: var(--accent); background: var(--bg-4); }
 
 #more-features .back-to-top { padding-top: 40px; text-align: center; }
+
+#using-web-apps { padding: calc(var(--fat) * 2) 0; }
+
+#using-web-apps .title { font-weight: 600; color: var(--accent); }
+
+#using-web-apps .cols { display: flex; align-items: center; }
+
+#using-web-apps .desc-col { width: 60%; }
+
+#using-web-apps .img-col { width: 40%; text-align: center; }
+
+#using-web-apps .img-col img { max-width: 300px; }
 
 @media screen and (max-width: 1200px) { #downloads .item { width: calc(50% - 20px); max-width: 375px; } }
 
