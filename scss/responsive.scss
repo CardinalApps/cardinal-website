@@ -38,8 +38,16 @@
         position: static;
         order: 2 !important;
 
+        &.mobile {
+          text-align: center;
+
+          img {
+            width: 70%;
+          }
+        }
+
         a {
-          transform: scale(1);
+          transform: scale(1) !important;
         }
 
         img {

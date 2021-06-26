@@ -400,7 +400,9 @@ footer .attributions a:hover { text-decoration: none; }
   #app-features .feature .info { width: 100% !important; order: 1 !important; }
   #app-features .feature .info .inner { width: 100%; }
   #app-features .feature .screenshot { width: 100% !important; position: static; order: 2 !important; }
-  #app-features .feature .screenshot a { transform: scale(1); }
+  #app-features .feature .screenshot.mobile { text-align: center; }
+  #app-features .feature .screenshot.mobile img { width: 70%; }
+  #app-features .feature .screenshot a { transform: scale(1) !important; }
   #app-features .feature .screenshot img { width: 100%; } }
 
 @media screen and (max-width: 768px) { section.s .s-title { font-size: 24px; }
