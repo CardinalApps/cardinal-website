@@ -446,7 +446,10 @@ footer .attributions a:hover { text-decoration: none; }
   #getting-started-steps .step .step-desc p { font-size: 14px; }
   #app-features .feature .info { width: 100% !important; margin-bottom: 20px; }
   #app-features .feature .info .desc p { font-size: 15px; }
-  #app-features .feature .screenshot a { transform: scale(1); } }
+  #app-features .feature .screenshot a { transform: scale(1); }
+  #using-web-apps .cols { flex-wrap: wrap; }
+  #using-web-apps .desc-col, #using-web-apps .img-col { width: 100% !important; }
+  #using-web-apps .desc-col { margin-bottom: 20px; } }
 
 :root { --accent: rgb(234, 103, 103); --base-font: 'Open sans', sans-serif; --accent-font: 'Yantramanav', sans-serif; --header-height: 72px; --fat: 100px; }
 

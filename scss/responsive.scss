@@ -297,4 +297,19 @@
     }
   }
 
+  #using-web-apps {
+
+    .cols {
+      flex-wrap: wrap;
+    }
+
+    .desc-col, .img-col {
+      width: 100% !important;
+    }
+
+    .desc-col {
+      margin-bottom: 20px;
+    }
+  }
+
 }
