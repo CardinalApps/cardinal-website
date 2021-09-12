@@ -29,6 +29,7 @@ module.exports = {
   // nav
   "menu_getting_started": "Getting Started",
   "menu_apps": "Apps",
+  "menu_help": "Help",
   "nav_theme_switcher_title": "Switch between light/dark theme",
 
   // landing

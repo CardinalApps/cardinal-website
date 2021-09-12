@@ -272,10 +272,17 @@ nav.pages {
 } 
 
 .has-dropdown {
+  padding-right: 33px !important;
   position: relative;
 
-  &:hover .dropdown {
-    display: block !important;
+  &:hover {
+    .top-level-item {
+      text-decoration: underline;
+    }
+
+    .dropdown {
+      display: block !important;
+    }
   }
 
   .top-level-item:after {

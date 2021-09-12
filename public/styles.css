@@ -106,7 +106,9 @@ nav.pages ul { display: flex; align-items: center; }
 
 nav.pages li { height: auto; padding-right: 20px; }
 
-.has-dropdown { position: relative; }
+.has-dropdown { padding-right: 33px !important; position: relative; }
+
+.has-dropdown:hover .top-level-item { text-decoration: underline; }
 
 .has-dropdown:hover .dropdown { display: block !important; }
 

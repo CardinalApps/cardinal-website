@@ -11,9 +11,6 @@
     <div class="right">
       <nav class="pages">
         <ul>
-          <li>
-            <a href="/<%- lang %>/getting-started" class="top-level-item"><%- menu_getting_started %></a>
-          </li>
           <li class="has-dropdown">
             <span class="top-level-item"><%- menu_apps %></span>
             <ul class="dropdown">
@@ -49,19 +46,25 @@
               </li>
             </ul>
           </li>
+          <li>
+            <a href="/<%- lang %>/getting-started" class="top-level-item"><%- menu_getting_started %></a>
+          </li>
+          <li>
+            <a href="https://help.cardinalapps.xyz" target="_blank" class="top-level-item"><%- menu_help %></a>
+          </li>
         </ul>
       </nav>
 
-      <div class="lang-switcher">
+      <!-- <div class="lang-switcher">
         <span class="current-lang">
           <%- current_lang_prefix %><%- lang %>
         </span>
 
         <div class="all-langs">
           <a href="/en">English</a>
-          <!-- <a href="/fr">Français</a> -->
+          <a href="/fr">Français</a>
         </div>
-      </div>
+      </div> -->
 
       <div class="theme-switcher" title="<%= nav_theme_switcher_title %>">
         <div class="svg--" data-src="/icons/sun.svg"></div>
