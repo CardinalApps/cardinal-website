@@ -1,6 +1,8 @@
 module.exports = {
   "download_url_server": "https://github.com/somebeaver/Cardinal-Server",
   "download_url_server_latest": "https://github.com/somebeaver/Cardinal-Server/releases/latest",
+  "download_url_server_cli": "https://github.com/CardinalApps/cardinal-server-cli",
+  "download_url_server_cli_latest": "https://github.com/CardinalApps/cardinal-server-cli",
   "download_url_music": "https://github.com/somebeaver/Cardinal-Music",
   "download_url_music_latest": "https://github.com/somebeaver/Cardinal-Music/releases/latest",
 
@@ -8,13 +10,13 @@ module.exports = {
   "app_name_server": "Cardinal Server",
   "app_name_music": "Cardinal Music",
   "app_name_photos": "Cardinal Photos",
-  "app_name_cinema": "Cardinal TV & Movies",
+  "app_name_cinema": "Cardinal Cinema",
   "app_name_books": "Cardinal Books",
   "download_now": "Download Now",
   "all_platforms": "See All Platforms",
 
   // SEO
-  "home_title": "Cardinal - Free media server and apps for your music, TV & movies, photos, and books",
+  "home_title": "Cardinal - Free media server and apps for your music, Cinema, photos, and books",
   "home_meta_desc": "The Cardinal ecosystem gives users the power to run their own media server at home, and the apps to play music, watch TV & movies, read books, and back up photos.",
   "getting_started_page_title": "Cardinal - Getting Started",
   "getting_started_page_desc": "Learn how to quickly get started with the Cardinal ecosystem.",
@@ -39,6 +41,8 @@ module.exports = {
                         <p class="emojis">🎧&nbsp;&nbsp;🍿&nbsp;&nbsp;🌉&nbsp;&nbsp;📚</p>`,
   "download_mac": "Download for macOS<sup>®</sup>",
   "download_win": `Download for Windows<sup>®</sup>`,
+  "download_linux": `Download for Linux<sup></sup>`,
+  "download_cli": `Download the CLI App`,
   "download_web": `Use the Web App`,
   "download_agreement": `By downloading Cardinal, you agree to the <a href="/en/terms-and-conditions">Terms & Conditions</a> and <a href="/en/privacy-policy">Privacy Policy</a>.`,
   
@@ -51,9 +55,9 @@ module.exports = {
   "downloads_server_desc": "Media server that indexes your files and makes them available for other Cardinal apps to use.",
   "downloads_server_all": "See all Cardinal Server features",
   "downloads_server_features": `
-                               <li>Free</li>
+                               <li>Free desktop and CLI apps</li>
                                <li>No ads, no tracking</li>
-                               <li>One button to easily index and update your files</li>
+                               <li>Supports Linux, macOS, Windows, Docker, Node.js</li>
                                <li>Stream media to Cardinal client apps</li>
                                <li>Includes web apps for any device with a browser</li>
                                <li>Monitor and control connected client apps</li>
@@ -81,7 +85,7 @@ module.exports = {
                               `,
 
   "downloads_cinema_desc": "Cinema app for streaming your movies and TV with modern playback features.",
-  "downloads_cinema_all": "See all Cardinal TV & Movies features",
+  "downloads_cinema_all": "See all Cardinal Cinema features",
   "downloads_cinema_features": `
                               <li>Free desktop and web apps</li>
                               <li>No ads, no tracking</li>
@@ -105,7 +109,7 @@ module.exports = {
   // global features                             
   "global_features_title": "There's Lots to Love About Cardinal",
   "global_features_curators_title": "Designed for DIYers",
-  "global_features_curators_desc": "<p>Cardinal apps serve self-hosters the best. The people who choose to maintain their own collections for whatever reason. Cardinal is for you&nbsp;-&nbsp;because it's a labour of love in this era of instant on‑demand streaming.</p>",
+  "global_features_curators_desc": "<p>Cardinal apps serve self-hosters the best. The people who choose to maintain their own collections for whatever reason. Cardinal is for you&nbsp;-&nbsp;because it's a labour of love in this era of instant on-demand streaming.</p>",
   "global_features_custom_title": "Complete Customizability",
   "global_features_custom_desc": "<p>All Cardinal apps are written in JavaScript and are ready for whatever customizations you have in mind. Custom CSS can be added directly in the settings panel, and creating JavaScript plugins can be done with the included developer tools.</p>",
   "global_features_oneserver_title": "One Server to Rule Them All",
@@ -172,6 +176,11 @@ module.exports = {
                                      <li>Statistics</li>
                                      <li>Reports</li>
                                     `,
+  "cli_app_title": `Cardinal Server CLI`,
+  "cli_app_subtitle": `The most powerful way to use Cardinal Server`,
+  "cli_app_desc": `<p>The CLI app is the lightweight, platform independent version of the desktop app. You can run it on Linux, macOS, and Windows, and in any environment that can run Node.js.</p>
+                  <p>If you're more of a <em>everything should be in a container</em> kinda guy, go ahead and grab the <a href="#">official container</a>, and enjoy the most hassle-free way to run Cardinal Server CLI.</p>`,
+  "cli_app_download": `Get the CLI app`,
   
   // cardinal music
   "cardinal_music_title": `Cardinal Music`,
@@ -228,8 +237,8 @@ module.exports = {
   "music_icon_title": "Cardinal Music app",
   "photos_icon_alt": "Cardinal Photos app icon",
   "photos_icon_title": "Cardinal Photos app",
-  "cinema_icon_alt": "Cardinal TV & Movies app icon",
-  "cinema_icon_title": "Cardinal TV & Movies & TV app",
+  "cinema_icon_alt": "Cardinal Cinema app icon",
+  "cinema_icon_title": "Cardinal Cinema & TV app",
   "books_icon_alt": "Cardinal Books app icon",
   "books_icon_title": "Cardinal Books app",
 
@@ -241,7 +250,7 @@ module.exports = {
   "tac_page_title": "Cardinal Terms & Conditions",
   "tac_meta_desc": "Cardinal Terms & Conditions",
   "tac_title": "Terms & Conditions",
-  "tac_body": `<p>Copyright © 2020-2021 <a href="https://github.com/somebeaver" target="_blank">somebeaver</a></p>
+  "tac_body": `<p>Copyright © 2020-2022 <a href="https://github.com/somebeaver" target="_blank">somebeaver</a></p>
                <p>The developer reserves the right to change the Terms & Conditions and/or Privacy Policy at any time without warning or notice.</p>
                <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>`,
   "pp_page_title": "Cardinal Privacy Policy",

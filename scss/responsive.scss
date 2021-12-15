@@ -1,3 +1,22 @@
+@media screen and (max-width: 1600px) {
+
+  .full-feature {
+    
+    .cols {
+
+      .desc {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+
+      .screenshot {
+        background-size: cover;
+      }
+    }
+  }
+
+}
+
 @media screen and (max-width: 1200px) {
 
   #downloads .item {
@@ -53,6 +72,30 @@
         img {
           width: 100%;
         }
+      }
+    }
+  }
+
+  .full-feature {
+
+    .s-title {
+      margin-bottom: 30px !important;
+    }
+    
+    .cols {
+      display: flex;
+
+      .desc {
+        width: 100%;
+        padding: 0 30px 310px 30px;
+      }
+
+      .screenshot {
+        left: 20px;
+        right: 20px;
+        top: auto;
+        height: 280px;
+        border-radius: 20px;
       }
     }
   }

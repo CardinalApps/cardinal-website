@@ -1056,6 +1056,48 @@ footer {
   }
 }
 
+.full-feature {
+
+  .title {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-weight: 600;
+  }
+
+  .cols {
+    position: relative;
+
+    .desc {
+      width: 50%;
+      padding: 100px 10%;
+
+      .box {
+        border-radius: 20px;
+        padding: 60px;
+        background-color: var(--bg-2);
+      }
+    }
+
+    .screenshot {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 50%;
+      bottom: 0;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      background: {
+        repeat: no-repeat;
+        position: top left;
+        size: 120%;
+      };
+    }
+  }
+}
+
 #more-features {
   padding: 60px 0;
   background: var(--bg-2);

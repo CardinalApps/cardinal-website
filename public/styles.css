@@ -372,6 +372,18 @@ footer .attributions a:hover { text-decoration: none; }
 
 #app-features .feature .info .desc p:last-of-type { margin-bottom: 0; }
 
+.full-feature .title { text-align: center; font-size: 36px; }
+
+.full-feature .subtitle { font-weight: 600; }
+
+.full-feature .cols { position: relative; }
+
+.full-feature .cols .desc { width: 50%; padding: 100px 10%; }
+
+.full-feature .cols .desc .box { border-radius: 20px; padding: 60px; background-color: var(--bg-2); }
+
+.full-feature .cols .screenshot { position: absolute; top: 0; right: 0; left: 50%; bottom: 0; border-top-left-radius: 20px; border-bottom-left-radius: 20px; background-repeat: no-repeat; background-position: top left; background-size: 120%; }
+
 #more-features { padding: 60px 0; background: var(--bg-2); }
 
 #more-features .title { margin-bottom: 40px; text-align: center; font-weight: 600; }
@@ -394,6 +406,9 @@ footer .attributions a:hover { text-decoration: none; }
 
 #using-web-apps .img-col img { max-width: 300px; }
 
+@media screen and (max-width: 1600px) { .full-feature .cols .desc { padding-left: 5%; padding-right: 5%; }
+  .full-feature .cols .screenshot { background-size: cover; } }
+
 @media screen and (max-width: 1200px) { #downloads .item { width: calc(50% - 20px); max-width: 375px; } }
 
 @media screen and (max-width: 1000px) { #downloads .items { justify-content: center; }
@@ -405,7 +420,11 @@ footer .attributions a:hover { text-decoration: none; }
   #app-features .feature .screenshot.mobile { text-align: center; }
   #app-features .feature .screenshot.mobile img { width: 70%; }
   #app-features .feature .screenshot a { transform: scale(1) !important; }
-  #app-features .feature .screenshot img { width: 100%; } }
+  #app-features .feature .screenshot img { width: 100%; }
+  .full-feature .s-title { margin-bottom: 30px !important; }
+  .full-feature .cols { display: flex; }
+  .full-feature .cols .desc { width: 100%; padding: 0 30px 310px 30px; }
+  .full-feature .cols .screenshot { left: 20px; right: 20px; top: auto; height: 280px; border-radius: 20px; } }
 
 @media screen and (max-width: 768px) { section.s .s-title { font-size: 24px; }
   #hamburger { display: block; }

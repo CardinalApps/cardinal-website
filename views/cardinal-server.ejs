@@ -26,6 +26,7 @@
         <div class="buttons">
           <%- include('includes/buttons/server-macos.ejs') %>
           <%- include('includes/buttons/server-windows.ejs') %>
+          <%- include('includes/buttons/server-linux.ejs') %>
         </div>
       </div>
     </section>
@@ -91,6 +92,24 @@
           </div>
         </div>
 
+      </div>
+    </section>
+
+    <section class="s full-feature">
+      <h2 class="s-title"><%- cli_app_title %></h2>
+
+      <div class="cols">
+        <div class="desc">
+          <div class="box">
+            <h2 class="subtitle"><%- cli_app_subtitle %></h2>
+            <%- cli_app_desc %>
+            <div class="controls">
+              <%- include('includes/buttons/server-cli.ejs') %>
+            </div>
+          </div>
+        </div>
+
+        <div class="screenshot" style="background-image: url('/screenshots/cli.png');"></div>
       </div>
     </section>
 
